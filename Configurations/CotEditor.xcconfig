@@ -1,3 +1,4 @@
+// 수정: 보호 TXT 배포본의 최소 entitlement를 사용한다.
 //
 //  CotEditor.xcconfig
 //
@@ -26,7 +27,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-CODE_SIGN_ENTITLEMENTS = CotEditor/$(PRODUCT_NAME)$(CODE_SIGN_ENTITLEMENTS_SUFFIX).entitlements
+CODE_SIGN_ENTITLEMENTS = CotEditor/DocumentSaferText.entitlements
 
 EXCLUDED_SOURCE_FILE_NAMES = $(inherited) Sparkle*
 

@@ -84,11 +84,7 @@
             "CotEditor.storekit",
             "Info.plist",
             "Resources/cot",
-          ],
-        }, {
-          "build-phase": "CotEditor/copy/Copy Command-Line Tools",
-          "inclusions": [
-            "Resources/cot",
+            "Resources/AppIcon.icon",
           ],
         },
       ],
@@ -142,12 +138,6 @@
         },
         "compile-sources",
         "resources",
-        {
-          "kind": "copy",
-          "name": "Copy Command-Line Tools",
-          "bundle-base-path": "shared-support-directory",
-          "relative-path": "bin",
-        },
         "frameworks",
         {
           "kind": "script",
@@ -160,6 +150,9 @@
       ],
       "package-product-members": [
         {
+          "product-name": "DocumentSaferText",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
           "product-name": "EditorCore",
           "build-phase": { "build-phase": "frameworks" },
         }, {
@@ -187,14 +180,15 @@
         "ENABLE_POINTER_AUTHENTICATION": "NO",
         "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
         "INFOPLIST_FILE": "CotEditor/Info.plist",
-        "INFOPLIST_KEY_ITSAppUsesNonExemptEncryption": "NO",
+        "INFOPLIST_KEY_ITSAppUsesNonExemptEncryption": "YES",
         "INFOPLIST_KEY_LSApplicationCategoryType": "public.app-category.productivity",
         "INFOPLIST_KEY_NSAppleEventsUsageDescription": "${PRODUCT_NAME} needs your approval to control other applications with AppleScript.",
         "INFOPLIST_KEY_NSHumanReadableCopyright": "© 2005-2009 nakamuxu\n© 2011, 2014 usami-k\n© 2013-2026 1024jp",
-        "INFOPLIST_KEY_NSMainStoryboardFile": "Main",
+        "INFOPLIST_KEY_NSPrincipalClass": "DocumentSaferTextApplication",
         "MARKETING_VERSION": "7.2.0-beta.2",
-        "PRODUCT_BUNDLE_IDENTIFIER": "com.coteditor.CotEditor",
-        "PRODUCT_NAME": "CotEditor",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.markany.DocumentSaferText",
+        "PRODUCT_NAME": "DocumentSafer Text",
+        "PRODUCT_MODULE_NAME": "CotEditor",
         "SWIFT_STRICT_CONCURRENCY": "complete",
         "SWIFT_UPCOMING_FEATURE_CONCISE_MAGIC_FILE": "YES",
         "SWIFT_UPCOMING_FEATURE_DEPRECATE_APPLICATION_MAIN": "YES",

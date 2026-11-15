@@ -1,3 +1,4 @@
+// 수정: 보호 TXT 보기에서 반출 경로를 재정의할 수 있도록 상속을 허용한다.
 //
 //  EditorTextView.swift
 //
@@ -48,7 +49,7 @@ extension NotificationCenter.MessageIdentifier where Self == NotificationCenter.
 
 // MARK: -
 
-final class EditorTextView: NSTextView, CurrentLineHighlighting, MultiCursorEditing {
+class EditorTextView: NSTextView, CurrentLineHighlighting, MultiCursorEditing {
     
     @MainActor protocol Delegate: AnyObject {
         

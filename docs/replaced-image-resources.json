@@ -1,0 +1,1588 @@
+{
+  "upstream_images": [
+    {
+      "path": "screenshot@2x.png",
+      "sha256": "76cddcfe3dd57f613bbb0168dadc1d2ea6877b229f6076588725938dce863cc3"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/icon_32x32@2x.png",
+      "sha256": "0c32babebdc632331d356b75edb502592248634f9da75e4b41075cc1fba03a2d"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/chevron.svg",
+      "sha256": "1b5f685a0c9a062960dbb8cd9f701515df855d126ea8350eee5ce4551ca7288b"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/icon_256x256@2x.png",
+      "sha256": "156d0c4a04fab3d4fdf30b08638d76dfd5890eb0cf0bb943bbb9d7c6f618d3f2"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/topic_script_hook.svg",
+      "sha256": "d7f6f0bca214c3dcba71026bf670663e6d8fc72ead3f11a67818ed01ec3c9c46"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/toc_secondary-dark.svg",
+      "sha256": "ca3b6a9ed8828e7319a36f644bcf2cd2bedb37c17e16e688db04aec7e2aec22c"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/completion@2x.png",
+      "sha256": "4d72ecee92a693bd8c46df5450b477b5ebd04359f4126aa9f15df2e89b7cd339"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/chevron-dark.svg",
+      "sha256": "61e1fdea5ddc2e1713dd6b99e443d126289de78c25a86c20cfc3d2ed3f40fa96"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/ellipsis.circle.svg",
+      "sha256": "5c2705c61251de047f8527f8d3d4887e04317e9b0fd64b18c7c70c726a915e14"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/unicodeInput@2x.png",
+      "sha256": "c2b518e3b8a0406ef9335e449f9449f87cdfac6543d93b919f9ca6a6e1cf5458"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/split_editor@2x.png",
+      "sha256": "6990bfd86645c30ad482d37eb30932d76afad5bd8b2118d4fbe0811a68e45096"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/toc_secondary.svg",
+      "sha256": "a7229e55b18442bda01653fc144c039e4f51850e01040b9b04e678f39f57eb59"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/lightbulb.max.svg",
+      "sha256": "fa824fb2d9e77d536b8446a30afa8e5499fd323bfe4ccce3b7a57b758227cce9"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/toc.svg",
+      "sha256": "a31ba632442d67cca2c1e8e40d0909cca8a9a7515688f85534691d226523fdfe"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/pencil.slash.svg",
+      "sha256": "3db65c013865737daf37d092ddfd15081e4e944ad161eeac032abe723f82cc6f"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/help.svg",
+      "sha256": "690f890b773060860c680632fdf39095a9408691ce5c1752d92a2cb6d109b2e4"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/Shared/gfx/script.svg",
+      "sha256": "4a239c6a91f48bcbde83fb07ae767632a86ac7f6e5396918607c75da2c1ab05b"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/multiple_replace_panel@2x.png",
+      "sha256": "48d357d2d0b883ed997928922093bc2ad943259edc731af42756fd87bd0f88f3"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/encodingPriority@2x.png",
+      "sha256": "37721ca7f769186748aa8090fd11f412ed1ef28df1470a9d25f1ba7afce8929d"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/ov_color@2x.png",
+      "sha256": "2c9ba59997ab767ed3f287b80dfbf0d872cd0fa2416bd6a18f3b1ab17138451a"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/rectangularSelection@2x.png",
+      "sha256": "1b2d176788b5faef25666577bc68032718fd12f26a1480431bd951baa8abfeba"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/ov_scriptmenu@2x.png",
+      "sha256": "370dec8bed8daebf1ae8620645c1e378aa110dadabc0c99c6147eccf112fa879"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/console@2x.png",
+      "sha256": "50e1ec9c98b3a039f980747e6f68d61d04fbf0a4bc94191e4a2abb4b7f13bdfb"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/quickActionBar@2x.png",
+      "sha256": "10945223bfb41c9bafedaba14c7de540e8dd6e22d864708b5612b04977246662"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/advancedCount@2x.png",
+      "sha256": "a70e6b9b98ebaf2e18e2971d18c50ddc427a2db17bc5cb1beb0111bb261ef034"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/characterInspector@2x.png",
+      "sha256": "5bbacbed6d15272c8d07c8bb4e800bbd0156f44dec38184719f01886c3dfca0c"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/theme@2x.png",
+      "sha256": "04ae06b38831880e9be2d53acd8776a8fe2673ce560ffcd31cff387e44fdeceb"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/encodingWindow@2x.png",
+      "sha256": "5b0490bc16415e6405604e1a6cfe51a5f243fceccca8f2dc8bde1c81ba83fd6b"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/jumpToLine@2x.png",
+      "sha256": "5372c4d15106304e5674675bc9e2c64f7294bfc88939a698ac4706ae113bce12"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/findpanel@2x.png",
+      "sha256": "57ceb9e84763f0780ea4fa8ff002e223b563b5274243e3414e4e9079991aace3"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/ov_find@2x.png",
+      "sha256": "67e350008dd1aba7770866fee9c0b7d6cc61f3b090979b50f574c5faacb36f4c"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/ov_encodings@2x.png",
+      "sha256": "763dc956ba81e5a02dd1f14f257a90a23d61b584de4842d03d09be408f0dbdab"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/en.lproj/gfx/outline@2x.png",
+      "sha256": "58afb0b33c5bee1adb2c8004473571f82e5f0f36bbbe718d7fc62b86af2c35c5"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/multiple_replace_panel@2x.png",
+      "sha256": "86f6f91b40dcf78bf61f95447e629f4687cb23e1850708517d309b522f54af0e"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/encodingPriority@2x.png",
+      "sha256": "b0c07322d6f637f2df6b0e5502ab94292546547840083f529d27b325aa85c967"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/ov_color@2x.png",
+      "sha256": "e461c6995e1a6a00636029bdeb0110edf0afceed3a82cca09c88798574dceb36"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/rectangularSelection@2x.png",
+      "sha256": "be12a7e67c87b78e386bbfab768487a2f1ddf1558c3eea1d5df1b45e9bb49062"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/ov_scriptmenu@2x.png",
+      "sha256": "c08d0da20cdc784bf85dff848e344cf146fd4eb5995ffc09d0c83a5dfd3eb98c"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/console@2x.png",
+      "sha256": "a35a6d61c93002a8a40bee97a59002de1e21062454421490a50fd3ced0890582"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/quickActionBar@2x.png",
+      "sha256": "a28bd4b6b889ccd9a583b164ccb0705c4cac01fd68e6247dace310be7e081fbd"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/advancedCount@2x.png",
+      "sha256": "70c7d25910e23316b96921b7a9de49652d95b8067ba5bddff1cd6c9405fdb6eb"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/characterInspector@2x.png",
+      "sha256": "d4bd75d02094147b20df6db737e565bbdeba380832779f60767704299f7b4779"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/theme@2x.png",
+      "sha256": "568f65441e590a42e452f27652100e96a2cc7ded135ee4ec1daf4a581a83deb3"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/encodingWindow@2x.png",
+      "sha256": "3466cc25d69e9ec556e245c2fb1093afe1a6d840e2c6d8f642188fe18957b3a8"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/jumpToLine@2x.png",
+      "sha256": "f1e0cb3fa86e6bfb89a933d0f41448177bff97de7fa8ae8a838e47d6888a857b"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/findpanel@2x.png",
+      "sha256": "88baf14213ee636ee2120131e76c599fe30bf7c99e182b3249799fc0da4ec339"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/ov_find@2x.png",
+      "sha256": "59603366930be66405478006e88922b9255fd815f0c4091b091f683e6efe76e2"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/ov_encodings@2x.png",
+      "sha256": "f99b8ee9e0255b207da6b1217a61ffac5394b1f77bcad0568683ec88568b13ac"
+    },
+    {
+      "path": "CotEditor/Resources/CotEditor.help/Contents/Resources/ja.lproj/gfx/outline@2x.png",
+      "sha256": "e1e8c640be96e9614eabe44e8767f9edfef16c5ddeba44e84e62fd78214f58b0"
+    },
+    {
+      "path": "CotEditor/Resources/AppIcon.icon/Assets/Gears_Stroke.svg",
+      "sha256": "282cdd2a78459f7dbb8095ce9926d793b228c7e190016dade1b3e25a2df735a9"
+    },
+    {
+      "path": "CotEditor/Resources/AppIcon.icon/Assets/Pen.png",
+      "sha256": "5cc872b0de222d0260f3b1e75697b9ac85dd2420c3a2aa30a9a35a1a06a28848"
+    },
+    {
+      "path": "CotEditor/Resources/AppIcon.icon/Assets/Outline.svg",
+      "sha256": "e836a7b474003a95f7662c67ce17fa59cc29b49a45ed626e13ef6dd37dcb957b"
+    },
+    {
+      "path": "CotEditor/Resources/AppIcon.icon/Assets/Shadow.png",
+      "sha256": "2bfff51e8abf79715764647592d5cdaf62ceec761edb805fcc2a37b7e5b4ad2d"
+    },
+    {
+      "path": "CotEditor/Resources/AppIcon.icon/Assets/Gears_Fill.svg",
+      "sha256": "af9b7fc6ef2fc01fa7fc8208cf0924c2b63ef4be2f00fee72798f5355c43b02d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Templates/split.add.imageset/split.add.svg",
+      "sha256": "42fcd7cb8d9c32f062bdd933740a178d34987807475a82f03c57099ce3e38f51"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.wrap.slash.symbolset/text.wrap.slash.svg",
+      "sha256": "98a52a177381ba1c3cc51a22565c9f8888f2a9bf21a487d9cf0963d0c2bcd105"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/list.bullet.square.fill.symbolset/list.bullet.square.fill.svg",
+      "sha256": "e192392447510e1b56d530dcebc86e4882ac8bd267495331def85af7dd44eb1c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.square.fill.symbolset/text.square.fill.svg",
+      "sha256": "bec019eec228448f8e4bc7094eb3b32d0fbbe509215e60351c4f317b0054a1de"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/arrow.alias.fill.symbolset/arrow.alias.fill.svg",
+      "sha256": "1a12f3114d14696a3d16e1933d2d4991e050cded0d60e2560917f2d36735dbd0"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.vertical.symbolset/text.vertical.svg",
+      "sha256": "891b244ab792ba7cc21f81e3b923cfb018f951f7869f2e3ff7da54c8b6afaa47"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/tab.forward.symbolset/tab.forward.svg",
+      "sha256": "924fcc7ee7b96c5c80f11b6e9d726f7e5ff2ac32d1c6c298c4c9216cc1f341ab"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/paragraphsign.slash.symbolset/paragraphsign.slash.svg",
+      "sha256": "3ade987450765c9da12feee3d0d10066ad73e4afe0d566e83896deee201d92df"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.indentguides.symbolset/text.indentguides.svg",
+      "sha256": "1849803ebc42520d757669d2059bb173a92c8a28281c413537e2716c3b63157f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/espresso.symbolset/espresso.svg",
+      "sha256": "86241fdcb46f07081ad8551ba361439e6d02ffec17b2fbc3b1c21071f917407f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/emoji.symbolset/emoji.svg",
+      "sha256": "6a33c620a9c7cdd6763e210312e5b52ffe418b0eee69be7136350aeb0d5dd866"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/emoji.symbolset/emoji.dark.svg",
+      "sha256": "33ee4a54b532ba92c85e2539076b51030eadf414a8c090dec62a9622655b3de4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.pageguide.symbolset/text.pageguide.svg",
+      "sha256": "a209cfcd9027814876a267b2cb267813d664cb7b90e6b0b84bd6cb24f0e041ea"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/cube.square.fill.symbolset/cube.square.fill.svg",
+      "sha256": "27852f4abfc25a4fa148e1d263a1d6e6274c6bb6a4d51eca9974cb6094544050"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/bag.coffee.symbolset/bag.coffee.svg",
+      "sha256": "ed53f896d35ebf8ac0d81e883e50f3e1cc18ac9a0c64ecb0cbb7746daff965e2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.wrap.symbolset/text.wrap.svg",
+      "sha256": "121bd707b398f9b40a6f63a6f961a5e37c40f9bca9d380c2a3292c2bb70e3535"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/tab.forward.split.symbolset/tab.forward.split.svg",
+      "sha256": "92a976e9983fe5dd437d9061bc05974d7ce3345134e38f8945e506fc27c3d0f4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/f.cursive.square.fill.symbolset/f.cursive.square.fill.svg",
+      "sha256": "40c54cabd8fe0bcf65780c5c1ad0c7543531370366a62e4abbcdfb5046729f54"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Symbols/text.commentout.symbolset/text.commentout.svg",
+      "sha256": "0ff52ff6368345b981c56eb01004949dec06808d6b97484d642d674ac527ee98"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_32x32@2x.png",
+      "sha256": "4971eba38268a1913ee701cdac9e5bbbe374535e9a898776fd11350a9474b747"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_128x128.png",
+      "sha256": "a66fa9d8e6fb988393e828dd5b3f0c630fe5e2b79ebd72f0497b2412c17edff3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_256x256@2x.png",
+      "sha256": "46e4e0e2f455d994430534e8959edc9beca5d412ad9d95885ee794b2834060d6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_32x32.png",
+      "sha256": "e260f2b47af0136d9e5523f14a54f45ea1a0708b1f3e79e0b8eb579c98da3a92"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_16x16.png",
+      "sha256": "cf4d00a45d1b552545c4339b0f9c05cb6e9ae4739414e07e7e618a7615523adc"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_16x16@2x.png",
+      "sha256": "964b96fefac3114a77192de701a07bbd5a4982d27d2d249b13265e61a67a3d9b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_128x128@2x.png",
+      "sha256": "54ce96080889ca6643f4b51b99405d6b3c345353d05f92f8a40a097a0c15cc49"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Syntax-image.iconset/icon_256x256.png",
+      "sha256": "34b4b0f3a1aa62988364e314053c816b2161b08010b8a2952ee966e63193cb18"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_32x32@2x.png",
+      "sha256": "fda2dfcf4d468633c563373eda7c52f6b8b4578ad3c93b1db8260f87db5ac626"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_128x128.png",
+      "sha256": "2ab7dc2e277affbaaca004407f00e338d1e1c01daa70220eeb447b4becd2a46f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_256x256@2x.png",
+      "sha256": "d06f9c2de61e30c0df39561ed665f1d257b4857a6ee3be9f07cabbf4466d7cf5"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_32x32.png",
+      "sha256": "6664efe5a7a3313589a80cab25e7b356d4e28a8fc1db28a7aea7132f4b18d08d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_16x16.png",
+      "sha256": "2b648a79d09f9015c3eecb24e7d09626be2bd968d77857a3a89ce1a57496657f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_16x16@2x.png",
+      "sha256": "fda239f2523f94fdb5195624879378a9aa0e795cc9f458c3c79cbbbbb6d8fed2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_128x128@2x.png",
+      "sha256": "12d773e78bdfea26f20d05df50ef9c75831fe2832c65960eb09ac4a6a23a9033"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Settings-image.iconset/icon_256x256.png",
+      "sha256": "561cc7c75628f6d88782f4f83dbfcaac51b154892e0d122fd7de75c3bf6bf257"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_32x32@2x.png",
+      "sha256": "4096bf168c1bd248f37416119c3660ed7e0c389acd54b4e660db5572c7372176"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_128x128.png",
+      "sha256": "cb6e29d4dd7204affec3706f89b5a29f1474223247ab6fa3840077f899d472be"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_256x256@2x.png",
+      "sha256": "e63a8be2c2903c20429f170db70c6699c016207cb04c3491c31dbbaa3f92b65b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_32x32.png",
+      "sha256": "456e581f3257ae05e1c966ff7a7c90ae0e7fd18e94ba147047c51209e73dd35b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_16x16.png",
+      "sha256": "a9f90ead1eb39a07216d927ba9f209381b70e1e296c32499213b6c1d82c9210c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_16x16@2x.png",
+      "sha256": "90a74b480f8b4d21225cee02224b0e694d3b7089306a14bfe57b7430d3509ead"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_128x128@2x.png",
+      "sha256": "c3e940c87335b56065f5823a2840f3bb213014f3d2a13b87139089f1e255de37"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Theme-image.iconset/icon_256x256.png",
+      "sha256": "8ffd29257ddb335ae8e9ea869d66b86d3268471a0f54d9ebcbe436feeb4dfc64"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_32x32@2x.png",
+      "sha256": "7b41650d6b1039d347f5d80b8ab0309b35f308be214574d6aef55937f15d3458"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_128x128.png",
+      "sha256": "c6b773b63a3839173ea2f255f2d2ef8c982f2275dd7985b144e25f9061749c41"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_256x256@2x.png",
+      "sha256": "9d930a7b5659354e0b6e9f90e645aa77a35f17108592445b1a26864d74582cd8"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_32x32.png",
+      "sha256": "0d7224d1f0b8a808116c3d37aa1c226bc6ef34278fa50a16a606631caf1b5ce5"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_16x16.png",
+      "sha256": "61b6f0c122d0d99cdb39b83765e3a072cbf6603b80acb3a37c02cb94cbf3ed1c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_16x16@2x.png",
+      "sha256": "7057e3d733a9e6333ea7e791b0990680a033944dd161f647d988f07957aab426"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_128x128@2x.png",
+      "sha256": "52c6dc300e87410386df67a6690384ef60cf6b24a265debbc3279aa48c0901bf"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Setting Icons/Replacement-image.iconset/icon_256x256.png",
+      "sha256": "283055407a3cf2e99a3c2c23cb8981bc68f51309a1492bd62c5288d4917cf7a0"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_32x32@2x.png",
+      "sha256": "04575be76c1945f9cf7729992417b2714f05d3b0c264b7e866cfe87beb731d02"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_128x128.png",
+      "sha256": "3bff5b6e81f234dd97bf6d1a9239389d0ecc234b93497aec036337414bb9eddd"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_256x256@2x.png",
+      "sha256": "e81e041fd3d809e66247b412ce262ba46b9cd84a788f2393ef325d72e0d067cb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_32x32.png",
+      "sha256": "4e2ca4d82a10b8b1274da5ee2efa098e0daa2819a04f9057b5350d1c4556b63e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_512x512.png",
+      "sha256": "e81e041fd3d809e66247b412ce262ba46b9cd84a788f2393ef325d72e0d067cb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_16x16.png",
+      "sha256": "a25806f84acb663a6db71b94c10e73142aca550f2c8cbedab26412b99186123a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_16x16@2x.png",
+      "sha256": "1db2e7d9356068b4648ebf0bfb533a97973ba9aa530ad1fa070d3adf89e19d02"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_128x128@2x.png",
+      "sha256": "242bb7fc0c7662a607c0645faf57c32ad72455888ad9f99b14c0876205691c43"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_512x512@2x.png",
+      "sha256": "f5012ce30cdd46e86e6b65088a0aa61c89ef78734112847d28a092dd60f63684"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Shell-fill.iconset/icon_256x256.png",
+      "sha256": "242bb7fc0c7662a607c0645faf57c32ad72455888ad9f99b14c0876205691c43"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_32x32@2x.png",
+      "sha256": "ee287efd7909463cfe9587562f31a018e9cb52619133b79f96ecf9ae9dc17175"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_128x128.png",
+      "sha256": "9e0286b75e1a763b445452b480084339eb253c9b732402aaa8318355c4ee79e2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_256x256@2x.png",
+      "sha256": "eb43a4a9df0f382ab64a645de4c1f21ac3ae014b484c637a78a5e90aa962e0cc"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_32x32.png",
+      "sha256": "71b5fa51b4af145ba8886ffbfb666a833159c7f12b92eb1b33e6b15013c17670"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_512x512.png",
+      "sha256": "a8391f098746dede5ec6e2adf926f2d5f54e62ddf0faf392248770ad999a7c47"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_16x16.png",
+      "sha256": "e2f9c5883a10b7c5a834a879f0e8572d7a3f5b9f051bd2c4eff4bd59be90a031"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_16x16@2x.png",
+      "sha256": "b262e97abead5aa8d9daca7c6d8884115a8e7f939b280813266ff8a6a19b2532"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_128x128@2x.png",
+      "sha256": "ebd5050296e1975d47d4b24bfb8f227d5a5491cf50b292c8ec295e27431231be"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_512x512@2x.png",
+      "sha256": "943050cdff04d0c81a1fc8dfedb2c47f24bd078caece5f462e5bf3ec3168caee"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SVG-fill.iconset/icon_256x256.png",
+      "sha256": "8515a81e5d1c6154e9c3edfcf308045038b036f3e9afb63df186d1eeba673b77"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_32x32@2x.png",
+      "sha256": "20ade655144d1db7e74dee347764f484cbdeeb8e3815656d7fd56670f464a5b0"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_128x128.png",
+      "sha256": "72c741242de7227d83cf88d93d746faa2e3393b6875e6225052e2f071ccd2cd5"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_256x256@2x.png",
+      "sha256": "c7c14826263eeb495facbe0d789107470a89fa07d0e70ddacc33f7d199c7607a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_32x32.png",
+      "sha256": "ef881595832b5bedd2f1852c9af617a377d57e8fe13c6f7588757a9b2c0047bc"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_512x512.png",
+      "sha256": "c7c14826263eeb495facbe0d789107470a89fa07d0e70ddacc33f7d199c7607a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_16x16.png",
+      "sha256": "a6acc8fba55ebb56e26be28ddfab57c3b59ccd05ab8f2905f7a9c7a91bb0f78e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_16x16@2x.png",
+      "sha256": "d054c02358aad732d9a1e03a32dd6179e0d284092fd7b0f3fa979b3676a12591"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_128x128@2x.png",
+      "sha256": "9f5568231f8ac17175a3c1ed115d6073a3ee72c4f9134a3585d639adfb115dd0"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_512x512@2x.png",
+      "sha256": "c67de13bfcd5eda5b6503c849f094d6d6d543d26097b99df933390a79365c109"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Circuit-fill.iconset/icon_256x256.png",
+      "sha256": "a1bb602b51da9832a8f13d1663a0bdc3023914b4c0ce57aa133d68d0d3213171"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_32x32@2x.png",
+      "sha256": "5ef8178209e4bfa6417b18a455934c91d93ceb47620d6db7ac44a38ad47b6f40"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_128x128.png",
+      "sha256": "a30b08a076ef188cea19d96086915823d94558e2a72dfcbc050fda10c5ad5d5f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_256x256@2x.png",
+      "sha256": "1ce1452708b640a41852ea0694bd327fdaa1d2fc8509377ee6634a1c9b8d7f56"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_32x32.png",
+      "sha256": "23daff737b9d20a1452b9a10d29f4222462dcc9a7a5c68e45c5f056ca35af49a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_512x512.png",
+      "sha256": "1ce1452708b640a41852ea0694bd327fdaa1d2fc8509377ee6634a1c9b8d7f56"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_16x16.png",
+      "sha256": "6c5738080671b0f30737f7108e157179291f26dcafe70974a29bc96605b6c978"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_16x16@2x.png",
+      "sha256": "ce02ae08f632a273a6bf19cf06a31954991f4e3ebd24fde7c827b46e702872c4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_128x128@2x.png",
+      "sha256": "fbf50d9b9c236a1a0cd0aed50ee8fe982b6e7da6fb68180f2ccddf15b5f5f51d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_512x512@2x.png",
+      "sha256": "a4c09ddfd93b579357886afe1ac32634256712304ccd990e4c600bf5f55d7f30"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/AngleBrackets-fill.iconset/icon_256x256.png",
+      "sha256": "fbf50d9b9c236a1a0cd0aed50ee8fe982b6e7da6fb68180f2ccddf15b5f5f51d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_32x32@2x.png",
+      "sha256": "7e663f36357d453fa3a02d87989f8506c74ca371e2144f511fb3445c6d6db87c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_128x128.png",
+      "sha256": "9a690f4f2e764045d47d010bae4a8bdfd208e9105a146a909293a5c959288018"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_256x256@2x.png",
+      "sha256": "78428c4ac41acd3ebca7d84a35524c867f8d011dd325cc3fbd700bbc0c7d0a85"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_32x32.png",
+      "sha256": "112cbdd3f83a6fdd833f332eb95c4746c9e590f4765e6432d7c90fdb4fd55f7e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_512x512.png",
+      "sha256": "34fba13f41dd92d7caa9a1bdd69e00ed74a0f7c868ce998abec7f683259d41bc"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_16x16.png",
+      "sha256": "71e6f49a1f857e218595a9016633bdd66d4a4a2753f57830325becf1282105cd"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_16x16@2x.png",
+      "sha256": "eb93636f6d4c5b2d9f31c76783c92961b3bab312e3f86c82af0caf9cd6dab7b9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_128x128@2x.png",
+      "sha256": "5b5a8cda2808340477f782e71a102be262d202e9e7e40dcacd967632f284f9ba"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_512x512@2x.png",
+      "sha256": "90dbd62b3fd341d7e45694b72e218ae3d4e82702ec5649376e147221c1089862"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CurlyBrackets-fill.iconset/icon_256x256.png",
+      "sha256": "7354a060d3c36c82975a9edf41573d52a07a07e97a69cd177d9fa45a014b2060"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_32x32@2x.png",
+      "sha256": "b4cb0fe586874647e65e2dd3b4437c744939452527a8e486658227dbd19402a9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_128x128.png",
+      "sha256": "9e9939d726795462c86da6269d9d89c21aef60ebc4619628f9823535ab4cf453"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_256x256@2x.png",
+      "sha256": "bdd039bb70e8e54e9d8e3c5ee6f314ba2ca992ffdfb30be75cedf1a298c8527a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_32x32.png",
+      "sha256": "acf4a7ec390122b5a58f5e680f0d971d38b904de90d6bff3386b3f1275688388"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_512x512.png",
+      "sha256": "7348e5d40f8bedfc2efce92f4a52ae4b99ea7b374e5f11a7b3c62d115d4be56b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_16x16.png",
+      "sha256": "dc4ad2c42e1be2fa804fc685af6ca2e2e7cc43c9a4d363fd194f8b8cae535b5d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_16x16@2x.png",
+      "sha256": "e6f66172634285ec2c46ff872d25f63c6de07341aeccadffc1591006177c3bb6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_128x128@2x.png",
+      "sha256": "6b393b16f9cd602b6d3f72d4e28d8111672a5ede9dca8552c7543b5904a243a7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_512x512@2x.png",
+      "sha256": "e826154a319847493c6120401727e496f5a75c2e50d6af7b937c778bab246a89"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Go-fill.iconset/icon_256x256.png",
+      "sha256": "c604bdea51c37408f2876954adb0616d42b5b8e4b6afb4ad5a7e2c1af3ccfe00"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_32x32@2x.png",
+      "sha256": "6285d77ed0e0a2028be2ffe999beba36ba991f05aca7491ec31ac1885be84e97"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_128x128.png",
+      "sha256": "fe5428316843ad0897b27315f63049814eb970ddc9581b5564d202a4d9038474"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_256x256@2x.png",
+      "sha256": "914b7ffa18d244cd891206f4b7d3f8a96afde1dca483eea5ba6aec9f33907ba6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_32x32.png",
+      "sha256": "fab3e9dbb2b7293099fd859a673510c9f35ef7393d70b4d9c37a8507fb86aea7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_512x512.png",
+      "sha256": "914b7ffa18d244cd891206f4b7d3f8a96afde1dca483eea5ba6aec9f33907ba6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_16x16.png",
+      "sha256": "e31d73964e11db99ff9c26103277e9120c7fa7a930b38dd8e938a584e994570b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_16x16@2x.png",
+      "sha256": "e37e1c9df7dc992c8502615ab37b9db840372b7fba41f279df49c634555b7ee9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_128x128@2x.png",
+      "sha256": "07f15a4bf4785128f68c8c42a16ca5d1bdce727ba2921b869eafb6fda5109e0d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_512x512@2x.png",
+      "sha256": "4c5622dd1749c604dccd9c7ad32f221091ceb6318ecf74610001ceb7184ce376"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/F-fill.iconset/icon_256x256.png",
+      "sha256": "07f15a4bf4785128f68c8c42a16ca5d1bdce727ba2921b869eafb6fda5109e0d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_32x32@2x.png",
+      "sha256": "f0c44d51740e03a03cea38b901ffa1eff65dff9b2887cd8e8a0f9148fd45d286"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_128x128.png",
+      "sha256": "45387303fa5db84445335c81212a04fbf17455e19c8d1858ba1346f2e40cc127"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_256x256@2x.png",
+      "sha256": "02ffad52b62960121ca084a6bef17f8439979d7eff743fe7f6f827eb9d902402"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_32x32.png",
+      "sha256": "3c28d6872dd86b26f4330b1a1893706a68c0dd1e8bbe3c25667559e639976d68"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_512x512.png",
+      "sha256": "14f27e1ae269ac2b2ec1f7bb9f58b9047b83768e03a8109c5811f7bb95ac0b26"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_16x16.png",
+      "sha256": "8da390fa3042381e3fee68ee6231576471e39121d80b747a1bb7153349b85eb2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_16x16@2x.png",
+      "sha256": "2a6134819215ae1e9ee73e5f83986c19fca713859e7dc667da52da4b1b6dfc90"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_128x128@2x.png",
+      "sha256": "63a34219417a477f361c7103ad0c41493a1a05204a29426c40904e4112be5213"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_512x512@2x.png",
+      "sha256": "298a607f3be09cf75901f90a10f6e23fb60edbe4c7156a8f75833fa43276953b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Julia-fill.iconset/icon_256x256.png",
+      "sha256": "b2a10fd557448b2789c4a5bf1c3899f6f4ca9189fb35df430f9f2b9dbd07dbb9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_32x32@2x.png",
+      "sha256": "8681461008ea4f2d5ffd8fb9959ffc9e25dcac84b1d19e8761d271d3803b106d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_128x128.png",
+      "sha256": "c0ed629d21c191fe76bd2799b878769a9ffac0365eebf162fb4ba6e706c2de6c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_256x256@2x.png",
+      "sha256": "be69658b75d0abefc6cff3253e12491e8bd5a0a505a6c71a25c0e77534304a01"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_32x32.png",
+      "sha256": "30e54d5b99e0af24c7b3e0b277667027eab5f2cd188059f719c5f205f834648f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_512x512.png",
+      "sha256": "9d2b5e40f338f82f2a655c7524ed1cb765a7580a701bda1f1c34ab4777c9bd7e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_16x16.png",
+      "sha256": "2f68e94faf6bb8ad2e112dba4d0b5de3899f538035c5543e5903b7fead88e87c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_16x16@2x.png",
+      "sha256": "a6987cf86a8dd079d86728f05f4525556f4e8d7b596a94a40d831b5a820e0312"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_128x128@2x.png",
+      "sha256": "40bf21ef9d10cf72548c66b5b428dfbfd80106bb6994b67266629c1649853f89"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_512x512@2x.png",
+      "sha256": "2d5d48a502ee0bce5fa4bf375b3a60c42e7b1b0f6bc8acfd0fff30ffe375b2bb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/CoffeeCup-fill.iconset/icon_256x256.png",
+      "sha256": "424af620c0ab1763c063a8ddbe9d8f6c326b4289287e150ad052f9fea69c3e3d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_32x32@2x.png",
+      "sha256": "fb748687cea532866a19ab4bd6f5196d5f745982136742ba848f7544e838cf34"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_128x128.png",
+      "sha256": "627228ea0303e73a53b30c3a8eff70f4e8e87b8a530b421435c05b85d98f280c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_256x256@2x.png",
+      "sha256": "282a9656c6e6f1a012680ed7451d08b50a153f9f5201ccd4d95efaf51a30de72"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_32x32.png",
+      "sha256": "0c98cb7d2981b97db3cffea525773fa3cdb4c75ea051814fa3f511162d96a7f9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_512x512.png",
+      "sha256": "be13e725ab1d39fb3ec44209fc874127d71008aefbaa5c5916fe483eb2d854fa"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_16x16.png",
+      "sha256": "ee49400f260152d8c75c4e8b98171ab5b61b332b37c53212018b2863b489c9be"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_16x16@2x.png",
+      "sha256": "8b34b2da28754174f5ea881aaaaa145a6ecfdbc21b254d0256e099f805d2bfd2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_128x128@2x.png",
+      "sha256": "a2da883924937ba2fa6770c7967dcb471cbdfc73a2fae3811d104fba36169084"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_512x512@2x.png",
+      "sha256": "32c27d2de2c1e829c3f9aba98c14c717d1b78d63deb210e780a7dc2b648262f3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Number-fill.iconset/icon_256x256.png",
+      "sha256": "d8f092d314af6f7ee4742d1fa289368406fda804cfeb0d15f88a49267c62d12f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_32x32@2x.png",
+      "sha256": "41ebb957f54c85a140bfd6ad7ffe0a66cb1cbc3ae12a9ee17e0783bb5ca26c1a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_128x128.png",
+      "sha256": "7dda82ed9822ad6e423e8c58efe5c981eb0f4fd42b6f93451a549a2bb45a0488"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_256x256@2x.png",
+      "sha256": "a3ce32493dc022ba59d21331e26de071d2dadd7b37925348710d99e8af6eadde"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_32x32.png",
+      "sha256": "c336f574e96fd927682e66a222bc84fbe7b7f0c596160085bf973c52546895b7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_512x512.png",
+      "sha256": "0141c06de39a2bf60c6de0c60daf721559c8d8e96bd2f94b053dc6dd424b6519"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_16x16.png",
+      "sha256": "f927b1712f1539f74bca3eb3c660eb4c68b59d7620fafd904383a5ab4637d01d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_16x16@2x.png",
+      "sha256": "6c5ba66474a3340a6951ab563232d6b2c880e4a32b417ef3d7b795704382311f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_128x128@2x.png",
+      "sha256": "b4261892d20b91555ece5d1ab3e674b6414f862f1b47ffc241b70ae5d620214e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_512x512@2x.png",
+      "sha256": "d4e3347d4c063d11ae1418f71aca4ea11ac8971b5f1f2b4a0a9e69b799667c42"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Gear-fill.iconset/icon_256x256.png",
+      "sha256": "4ebf8b4b219dcf4502ce160e43c9d03f7c5d0db842f379db6f6950a62acb2048"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_32x32@2x.png",
+      "sha256": "42079d8eed496f51d6f9d9e5e41d87d58bc030b3dc4d6ad74f17478eda36c108"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_128x128.png",
+      "sha256": "8d59483fc87d792eb42173b4ae630c17c679a93171802e783a38d095e0e7dbca"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_256x256@2x.png",
+      "sha256": "bf29582859b2057cf8cfc252b1879db614c64888099900a6d6aea793cdee3da3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_32x32.png",
+      "sha256": "637f9aaed466e2a9b2d5a290b76b82451b812ffa10623655ded82630f1e9e3ef"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_512x512.png",
+      "sha256": "bf29582859b2057cf8cfc252b1879db614c64888099900a6d6aea793cdee3da3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_16x16.png",
+      "sha256": "2f432f3721374a02c405f05f1ab701c6b565df3362cfe8f2cf1a3085c1affc35"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_16x16@2x.png",
+      "sha256": "05d72ae48cf60eb47f407035b133ca91207ae080cacebe093a12d6124f8ecaa6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_128x128@2x.png",
+      "sha256": "e2ff29021f0e52345318df32c81f65361f623df1fdc55b8ca51c7d835075af4b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_512x512@2x.png",
+      "sha256": "a509e164f4aa73b892a61ab2fd2983f5bba6b7eb811fe5b58ac0cff2bcc5df52"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Markdown-fill.iconset/icon_256x256.png",
+      "sha256": "497e9a1667e6e287936fd13fdc72de055eae8bfedef5f35dcfac48964836c2c3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_32x32@2x.png",
+      "sha256": "1f5151e1948233fe019f1626f62d9c70c58091d45caa45432aae39de40e0ebc0"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_128x128.png",
+      "sha256": "a659c59cd43683f675d923eb047459f57c385d7852dd1966c6d568a970031393"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_256x256@2x.png",
+      "sha256": "95ebed1bdc33c631985df1c0708b6d19ad9c0723ffa96be65fa4e59eda5b6775"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_32x32.png",
+      "sha256": "a4c752207a84de4a44eaf062fc0239f32bb6313e8a04b8acee32ee3925627468"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_512x512.png",
+      "sha256": "d7bece61106ddf1a9b66fcbd64208f4fe02ec5216c5cfaf32b50caf36aa14b3e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_16x16.png",
+      "sha256": "5a94c9e7ac74c87ba88120981682086886fb23c6867f7667ea0063bac5fe28a8"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_16x16@2x.png",
+      "sha256": "59bd85976c7996bee620de1c5aac0ca2768f37bdcad4bb3fff048b30f34b6e1b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_128x128@2x.png",
+      "sha256": "87eddc7483f2c27400f9f77b7846849d2d1a511033e635980334b3a7b6e11126"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_512x512@2x.png",
+      "sha256": "ace596b7d08839633bb26d7c497ed15629ba1b40231e1345992f9a827daa5ed0"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Dart-fill.iconset/icon_256x256.png",
+      "sha256": "87eddc7483f2c27400f9f77b7846849d2d1a511033e635980334b3a7b6e11126"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_32x32@2x.png",
+      "sha256": "dd3c395b961a6ee34649c811ed66a4bd7801847cd5866288bf1a3e1bfee15097"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_128x128.png",
+      "sha256": "85ef6846ce45c5fdeb32ebe6503f3af69f934fb5853826b283353eb5e99b17bf"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_256x256@2x.png",
+      "sha256": "ece6b6fb7096a1568c951e9f8c3a0877985a078d56795982f6f413d3af798414"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_32x32.png",
+      "sha256": "5795fe37a1c01b8a485681b1883255848ba80a1b44f88ac522970fabc7b7c2b6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_512x512.png",
+      "sha256": "ece6b6fb7096a1568c951e9f8c3a0877985a078d56795982f6f413d3af798414"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_16x16.png",
+      "sha256": "8dcf4f89e7ae51bd3871baba0b69c6d75cba84a304515e34e3b9b24bd28ad7c1"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_16x16@2x.png",
+      "sha256": "08d4ea4cc0ae28c0f4dd52b0fa3746a0a208cdebbf545a30f3edd4aa9448a13c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_128x128@2x.png",
+      "sha256": "8b964fffd4c99c91926eae40c3be46f184fb588c0817cc2d274d5e39bbcf7a37"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_512x512@2x.png",
+      "sha256": "dc1dd24d574a3a16befc4c98b5448d819af2695ee26fba69827877f8f7bb1e99"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SQL-fill.iconset/icon_256x256.png",
+      "sha256": "8b964fffd4c99c91926eae40c3be46f184fb588c0817cc2d274d5e39bbcf7a37"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_32x32@2x.png",
+      "sha256": "b01261ecfd3500868278bcac4362d77378a5dd1d7118186e6498e84e61b61c1b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_128x128.png",
+      "sha256": "982713823334c6c1a10b1af96731c3f73a23436b16df7078ae3998cadc3767e5"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_256x256@2x.png",
+      "sha256": "062d6c9025a1f16a37f0ebfbe502743a4ca4744a9a5f95a39659bfaba10fa32e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_32x32.png",
+      "sha256": "3e0c1f1526111e874f6d0c8f93c3cae217242a0c654c779a25604065b36690bc"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_512x512.png",
+      "sha256": "05fded331f36b252defc3e20891e68722b6b3e2105f41be58f0bd5da7dfa23c7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_16x16.png",
+      "sha256": "2dd2ea3a76d14b9d35730915f6fadcb88517c753fd5a6447ed247de4e311248c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_16x16@2x.png",
+      "sha256": "1d37c6457de2affcf3bc50c606caf1e2a448f5a8adc871d0535ce5805952d8ab"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_128x128@2x.png",
+      "sha256": "f88ec5c4eee9b2da7e6d7839f7b62d05e3e350c62f1f25df29e44add67919c4c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_512x512@2x.png",
+      "sha256": "0e7e7e65080b8790dcd70a3351b755383556d40dd97c260f2d5af512228c8759"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Haskell-fill.iconset/icon_256x256.png",
+      "sha256": "15985119c38201b00f7612e0b4c2d79e6ce224fadea18d1a985bf66dfa0b73b7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_32x32@2x.png",
+      "sha256": "c8b95ed22a308c16ab19f01ae19c469bc62e8c1808796135fa6047f6a3186449"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_128x128.png",
+      "sha256": "8b8dd16ccef9e35ff9a4f755e336e5d9e2813d2fa9b20539c99227e7cd44dea8"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_256x256@2x.png",
+      "sha256": "a6c1092fc0dc8de4b067476f7eec53454544a7e472c48e3f41b60f6c017e393d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_32x32.png",
+      "sha256": "41664684067213b5f53a1a2f15837b644f49ac0745b33c40489be614f4a01988"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_512x512.png",
+      "sha256": "b5f0328423d88d8f8653174d156f6211d25aa2d080b7c3696f1bcaeffd41ac44"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_16x16.png",
+      "sha256": "a80291204e565d60db2cc7ead69b1dbb00837e7b8256e5bdcb0998d4b88cf90c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_16x16@2x.png",
+      "sha256": "79219f525eb25072f91eab301e171526d7216ef564b14832b23911f81994b8e2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_128x128@2x.png",
+      "sha256": "6caabec4bf67db5dd8fe15791b140060267813a0bf7c9f556ffc20ceb975a246"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_512x512@2x.png",
+      "sha256": "2e5455f07e79c563f32dc533c6b37ed8eb32679b9e32b635ae19935cdd5ee8c9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Mojo-fill.iconset/icon_256x256.png",
+      "sha256": "ff221ffe9f7d1bda94810122556b22c3947070e6f26cc7eb287a31e87d1cbf4d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_32x32@2x.png",
+      "sha256": "cd1eb3206026322d52c92a2b102211a97cc116f9952e6c0ac20318917f59aee4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_128x128.png",
+      "sha256": "4f3dc3ac6bb637377a4bb5ffd0333046b11fec9691b6f4672ffc956b53be82d7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_256x256@2x.png",
+      "sha256": "6e2412c62c579924857bf563c3b2b409707fe40420750f3a795160a2f24aaf1f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_32x32.png",
+      "sha256": "45191fec566a168fb4cf4551a02c4a05d21c7b2b35541afffb0ac13c84f43d36"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_512x512.png",
+      "sha256": "fb8f6eb36dad7af16012c610433510602e72c94be4efb92ba41ee52dc2dd3a1f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_16x16.png",
+      "sha256": "db221c02b264bfd10c79ed7cce21e6411c1577145edfa4898cf6e236534bb748"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_16x16@2x.png",
+      "sha256": "630989def6a8bc179ecf3fe5f22ed7046de2357a461270a35d0885e56ef68c46"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_128x128@2x.png",
+      "sha256": "7994b860a7293bd9c0f37a65cf59322c91713788fee982154926d3922b74f65f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_512x512@2x.png",
+      "sha256": "efa28140a8280e1fb4372ea0e900828232fa3691fb92a9fce505655d75ff40ed"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Ruby-fill.iconset/icon_256x256.png",
+      "sha256": "84fcbe84a5b7a00bd70d6501f7421b23df4cefbbc2b552f6bc1ebd668c6c8c50"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_32x32@2x.png",
+      "sha256": "19f6eeb95fd7dc0fc115f1fecc205b3ff48dbb8a9e8e3809418f06a8afdfdb28"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_128x128.png",
+      "sha256": "3d602531847ca5911e61c7683c77d8ca07da46740bb47be3e0d191ffd8b58f9d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_256x256@2x.png",
+      "sha256": "9b598d70e17a8edb9a44714338579800973fc88396c9cdfca55a1d4b358f2b15"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_32x32.png",
+      "sha256": "6ffec01867f8012467d0f9d99705697da353b71c3dde13dfafccf911f86c6823"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_512x512.png",
+      "sha256": "9b598d70e17a8edb9a44714338579800973fc88396c9cdfca55a1d4b358f2b15"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_16x16.png",
+      "sha256": "d5e1644635184d9d7360e1c608e1d5bb40b416cac5261e183066d86b6fad9e02"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_16x16@2x.png",
+      "sha256": "1c51c9182e77b8cb5853baa64c3ee785a9e5fda2811f67fd8f4232fdf6bd2437"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_128x128@2x.png",
+      "sha256": "9dbc894967bd3f16368d5c0e04b121dd748579dfe2f2409f01a8c089fc9d11ad"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_512x512@2x.png",
+      "sha256": "08ea0ec3c074ff48ee38d0149aaaea8ce61e3448aa4c124f21c6fa5f4fe50d63"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Text-fill.iconset/icon_256x256.png",
+      "sha256": "9dbc894967bd3f16368d5c0e04b121dd748579dfe2f2409f01a8c089fc9d11ad"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_32x32@2x.png",
+      "sha256": "edf7a757885b918701586d3644a83d6911d2a6829247198487533876dfb87f55"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_128x128.png",
+      "sha256": "18d0bc1007298ca1ec92f5ef0ec6de8c6613c42aec0a8fcacc5ba4cd30e92b87"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_256x256@2x.png",
+      "sha256": "2f4c8b6695ed074752454ec645dd43d7610c59c74a72c041a0260c40094f9064"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_32x32.png",
+      "sha256": "3da77a1e564bf85238615927ca9ac04bb7be79007beb10a7b11c05e66084f5c2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_512x512.png",
+      "sha256": "73081900b29b2ab37a40a6e6c037f0492197e8b31ae3008c560b8c364554ee3f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_16x16.png",
+      "sha256": "78dd89c83ee2a11eed050c2d2849ec4c9ef24f81f594b7f7a31a254f04985540"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_16x16@2x.png",
+      "sha256": "ad8e0d6a38391c3c03545bd594651ee79e45c82fcd8b4c8e86a4f9de608f34c4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_128x128@2x.png",
+      "sha256": "850cd96428b66457721cd75dc8a8ec8a0dd97805f2e850c49105e58bf1344362"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_512x512@2x.png",
+      "sha256": "15bd1fece5178e4fda2f94dfff7270a23e25c77ba812d34478419a00630b6a80"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Scala-fill.iconset/icon_256x256.png",
+      "sha256": "850cd96428b66457721cd75dc8a8ec8a0dd97805f2e850c49105e58bf1344362"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_32x32@2x.png",
+      "sha256": "0c3d459a5a05056c55a4d4ce38512c81dc964b6ad618645a1a6bff7dc62c6e8c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_128x128.png",
+      "sha256": "b22857ae1407fb9c0d5f75eeeb327002c278a4070355718f2ed37fad5cd27aa1"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_256x256@2x.png",
+      "sha256": "df425167b238b492482ccb1122cba7a3bc549269022f85f50b1ae077044a0afd"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_32x32.png",
+      "sha256": "84445f86dfa897532ae71a754c4c7a20accbf124b0efcc22c16c3a462a291ad5"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_512x512.png",
+      "sha256": "488ce4a6b1337b9971849c145f4da422c48f05b4eed537b44735281df991495e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_16x16.png",
+      "sha256": "fa372e7a88b6b955117e523e3a44b0ae1484a1edd67cee735bdde0e0ddce79e9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_16x16@2x.png",
+      "sha256": "c9588e2a3cbd6efcf4e6b840b4d671663b9d7c001ea9068316775fa9d620c335"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_128x128@2x.png",
+      "sha256": "10472714262e1881a396273799ee704caa6f67b3ded5c37d37044fe2361dd55a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_512x512@2x.png",
+      "sha256": "f9ba7e5643bc36b7343dec619f95ec2645d8beb78655cdd143873293ef0f8257"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lambda-fill.iconset/icon_256x256.png",
+      "sha256": "d0f0f3e41382914668967b7425faac6c3c21b2b33c926e5efab0f5039aaa509c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_32x32@2x.png",
+      "sha256": "b4e9142230d5149a53d547becca9d20e1eb338d8b56ba47a90b609a8b1de2f88"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_128x128.png",
+      "sha256": "96acc22aa1e82490cfd0931f5ad9a057eef28f9ae108ebb5519919360ec45960"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_256x256@2x.png",
+      "sha256": "19087e1599d045d67c855c491cb4a4be2dfb58503be03d7cd629ef03262c198e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_32x32.png",
+      "sha256": "21de5586a4becf9b240b82b0166722d574673907ad7521ccf4622fb0a8b1b5dc"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_512x512.png",
+      "sha256": "ce07c2d277cda2639a5ac570bd2e3077c118961273ed738e997e585bf1d4c27c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_16x16.png",
+      "sha256": "0c90eab7a726c7d674a125caa5c66dfd5b8778ce08542e1cb8e9234f2e3a1428"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_16x16@2x.png",
+      "sha256": "22e00ddd56aa47812ea4eb37d6f5d25c9ac8cd1e5b79d36ef74ccf034e930988"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_128x128@2x.png",
+      "sha256": "2d6ce830a30cbf6fff98fb573b924f5fa2acb2c5c2891032b51ea329211757de"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_512x512@2x.png",
+      "sha256": "36502a5280d19351cf2c825bdba45e4690c837050e0a5983e89d3528425fc083"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Lua-fill.iconset/icon_256x256.png",
+      "sha256": "66647736e6d5a0552a39f8132486b8d446c7c7c2fdc0331b3d2a3fd9fd9985e8"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_32x32@2x.png",
+      "sha256": "b3995c1c22581fca9b1d68accc2b640e5b887b9ec55e13a9399e5c24346bb697"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_128x128.png",
+      "sha256": "11f39d308c5ebf49b2a2ecba09a345946d6c83e404a1d9f7c124445510583a2c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_256x256@2x.png",
+      "sha256": "06676ac54e2fe0d98496a6bd8786134cbcc9cfa7bed0e45c55d7c3ce97e7075b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_32x32.png",
+      "sha256": "c5451db77a11bb3dee59f49e32119c69cf2b001a1b47b64376d61711e53979be"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_512x512.png",
+      "sha256": "6445896a6a15472aecbc550e9c21682693a5974831384455ca7d965e38766539"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_16x16.png",
+      "sha256": "a23115d31752f6f0ac46eb0ea2ccb37a193650dc3c527ba0c3ffe61ee7e36df2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_16x16@2x.png",
+      "sha256": "8ca9a17f6f3f042da7c4081c7b9f9efc53ea67d97251d0eb5349da03f2ca05eb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_128x128@2x.png",
+      "sha256": "a2b1bd49d7015ce7b16b98f91ce33983678b6ea8608dbd1e1283840ff421a1be"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_512x512@2x.png",
+      "sha256": "2b5aaa2872430711a5f48a9f63ce2ff70c7bda253599134815590db983e7624e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/D-fill.iconset/icon_256x256.png",
+      "sha256": "1c0e5958d1bc857eb8acc057aebdded87e06042348c3adceff0500ef9aa518d3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_32x32@2x.png",
+      "sha256": "68a917933f89acbfe0f60c8335a390cfd1a581a0f9b30a5202e81241cd7b6ddb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_128x128.png",
+      "sha256": "9a16a739fa64eaaeee39796f35c306c4aac6e24d31c724c6e8d49e45797239fa"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_256x256@2x.png",
+      "sha256": "9bdcbcaf38c67fe5f195c85b13923defb41dcac6de10f1cba678fe0a324a1bd4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_32x32.png",
+      "sha256": "9022f7cfd5fd273e702267d32461a3cb3be67889c17f69b83d0c5fc3616bec56"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_512x512.png",
+      "sha256": "9bdcbcaf38c67fe5f195c85b13923defb41dcac6de10f1cba678fe0a324a1bd4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_16x16.png",
+      "sha256": "d04dfa935641a2e8bed2435305ce2440b983f43e31d307746413b601a367ded4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_16x16@2x.png",
+      "sha256": "ae889de6501a12a5ff5fe1b3ad03dbe925aafe3d12d37deb61dc10774418b365"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_128x128@2x.png",
+      "sha256": "c4932036f167aa3cb558063f9ce3067537050d20793a910827a280afbe7cf541"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_512x512@2x.png",
+      "sha256": "edbfb21dc7f6ad7be9617d826865ea25f42232dd35c8470f4b516d5908af7299"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Kotlin-fill.iconset/icon_256x256.png",
+      "sha256": "650defc255faaff2e26cc7fc5e6c26e56c21bd82214b09f4ae91f2720b2c3f86"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_32x32@2x.png",
+      "sha256": "ae66bb6efbab6e072e4bc7c8abd742f898ace2fde4284a2c975339c313c347d3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_128x128.png",
+      "sha256": "9fb1f86cac8635dacb9918dfb21a6795002d8649fb6fde9be3e0a6e5c9f6e21c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_256x256@2x.png",
+      "sha256": "95669ced5ac243c13cbf5c65a80f28e7f6ac0a721a8574a11018663aed87ed88"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_32x32.png",
+      "sha256": "04f4e1aa031fbb7db7c65afea48487f13f77c121be0e9f5dca9bd9a8a28caac4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_512x512.png",
+      "sha256": "a29150aef8bdd16f9924d83f1ef094d0edbff93462445bb1b6d2ed79a91dd9cb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_16x16.png",
+      "sha256": "b5e880cea90c6a460dc7dc511dce3c995de7a3582297a3d79ffc907d814a0bdb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_16x16@2x.png",
+      "sha256": "7cc36535232af2e5b9f10f192579e00dea204f8129c661d0d031bded9856a851"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_128x128@2x.png",
+      "sha256": "220bc22f53a93ca8e7f1ecc93c0269576aca412e1221d19fbd7c068867a68d48"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_512x512@2x.png",
+      "sha256": "5c549fb6ae9fbb4591f728b324cccb0b9b6dbb3002cfb635166621b8e9c3b2ba"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Python-fill.iconset/icon_256x256.png",
+      "sha256": "5175114aca4de5873203c3b6dbdf0d71bde7baddf3a912bcbcd8a9cd050b72fb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_32x32@2x.png",
+      "sha256": "9f30f293628856684d325b5bd9c7f9751388bda7fd571fc46735f670fc967d7d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_128x128.png",
+      "sha256": "7e98286be85b32061b4f64b8ffb6982ee71c25c1af0b80f55e8f3bd07d906b15"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_256x256@2x.png",
+      "sha256": "4f5ba82cd7bf3a8d080bdef2ec34bbbb17c099f20cfc8b2e57465a7e005052d6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_32x32.png",
+      "sha256": "e956ec77aa744c5b6630911606530a16e14872d8f4f3ed807e5e925a3cd6b89b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_512x512.png",
+      "sha256": "4f5ba82cd7bf3a8d080bdef2ec34bbbb17c099f20cfc8b2e57465a7e005052d6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_16x16.png",
+      "sha256": "f28f44325e9e99abf824319b4ca1f5392dfb61acc3a7df14b17d83f39021a913"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_16x16@2x.png",
+      "sha256": "eab1a658b02bf39824c2b193a9b5256d018bfe08199beda4d38d67b2aefb389d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_128x128@2x.png",
+      "sha256": "3daaee018ed31db6f2cd597c6fdd08c454d864f3e2a2e56404b6be80f06c040c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_512x512@2x.png",
+      "sha256": "94010f742b5d95095b507f9df63557d900d4fbbf4ffef487ea0a4b28bb31fb8f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TOML-fill.iconset/icon_256x256.png",
+      "sha256": "60b65aaf4aab76b511b4fc204394c5f754cd7a35f67c8760a1ac53baf643d19a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_32x32@2x.png",
+      "sha256": "7fbcb129c94d1e28b3c1e5d423f196e2d21a0cfa3ac34da0f666883f7588f03a"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_128x128.png",
+      "sha256": "df5b90c3008b00730301d67efdef75cb3a076d87b4d9f0b341aaed05ad9c9233"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_256x256@2x.png",
+      "sha256": "e33d3f5d395f06161d34f2307ca1cbf13c175848e7f7f9c83b657ee3c189b95e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_32x32.png",
+      "sha256": "e2e9c62f8bbd42173a9cd17adf04130c83d0f2e2f93e73be13ce2a2f5e39e53d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_512x512.png",
+      "sha256": "e33d3f5d395f06161d34f2307ca1cbf13c175848e7f7f9c83b657ee3c189b95e"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_16x16.png",
+      "sha256": "1f3a0d365621dd04b873b3b9ca8af12706fc8e9143e989ad2c422e8df331bede"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_16x16@2x.png",
+      "sha256": "9d6be299f0052bb9dda496c7e7cb4b819fb287c4d07a845e8066023a3fe72846"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_128x128@2x.png",
+      "sha256": "481ae31dcf98ef4b55045f34e7eaee9a895fa85ed9ca6894e0c2e695166150d9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_512x512@2x.png",
+      "sha256": "d4b3b630787d309fcf50dbcb71269109f96c1319963cd631aca0f069d9b3b57f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/TeX-fill.iconset/icon_256x256.png",
+      "sha256": "481ae31dcf98ef4b55045f34e7eaee9a895fa85ed9ca6894e0c2e695166150d9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_32x32@2x.png",
+      "sha256": "8e8b76f1db581d4f172c27fe545f0dfe69f38d13ac08c19ab3413c03561964dd"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_128x128.png",
+      "sha256": "ce77e16d8c6d4ccea75f620fea2978f6d9ecfa161f7e1b2f7a3e8598a56f6ae4"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_256x256@2x.png",
+      "sha256": "a9c8e0e17a092502bc51316c0e47a2f217611b190ae5fbfe80ca338e684d5e65"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_32x32.png",
+      "sha256": "8cb20b8fac0208ee23f6db4f30b647a1adfbac22f0586d5f1cfce0b58fd6809b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_512x512.png",
+      "sha256": "80c35dd880ad5b72b02d6f2fbc527e7fe924360f279fe4f05af3bde392b258fd"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_16x16.png",
+      "sha256": "8e64a9283fe58360363e82cc9e7e6a1f36521d8e2f0883cc8124ef2fad60581c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_16x16@2x.png",
+      "sha256": "c112df489f54d022ad914f6da2a9ff63b04eee23d3a4398d3173bec5494b7383"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_128x128@2x.png",
+      "sha256": "7675b16011239581ba74a96f62a3737391dc028f4ee8e84c9a1a34a20edfeb37"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_512x512@2x.png",
+      "sha256": "383ba3ca222cbfa10a55bff33e7b76c49faa992d7dc119bc8f905c1a8f42a7b6"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Swift-fill.iconset/icon_256x256.png",
+      "sha256": "439c56e7165df1f511828c41e00f136d24020c979ceda4387969fe71663fbf9f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_32x32@2x.png",
+      "sha256": "998ba925e7b8c85a440529cf8a20a391adaceb5b0803e18472e80646c2cfc450"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_128x128.png",
+      "sha256": "436cc33806aa5b590209b64e58c12a298d7293c6f250b816103000abb7e1ce4c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_256x256@2x.png",
+      "sha256": "cb6b6eea272d95a874386c6ffbb0138ce61c488eca581d95c4d4fa39cde6e4de"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_32x32.png",
+      "sha256": "14c29b6ac886d39a5dfa4f33b900c3af830c74a53d0c7c35199a62f59b8eda05"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_512x512.png",
+      "sha256": "5f8cc008ed5efabb46483c19796e15f853120f75821eebf7accffbf19b571cea"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_16x16.png",
+      "sha256": "a00708fe508555d663981067b78a8a9cb51b45944277e1503c97edcb3f4371e7"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_16x16@2x.png",
+      "sha256": "b1e0262b4f0507e573d88d4a52232c2353f128ee70c2d8659533fec0731b2f2d"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_128x128@2x.png",
+      "sha256": "869b977ce8c3cede4600d944c8947712eea5c0c4474c1dd62da0b45dd12296d3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_512x512@2x.png",
+      "sha256": "13de7313e4547a1b995c6019e4babfa56410018ddb3742a6eb54b1f77e6f1fdb"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/Diff-fill.iconset/icon_256x256.png",
+      "sha256": "869b977ce8c3cede4600d944c8947712eea5c0c4474c1dd62da0b45dd12296d3"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_32x32@2x.png",
+      "sha256": "ca115692abe0fe2f66c38fc84a30acaba0a692ea912227f064f4b57ef57f937b"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_128x128.png",
+      "sha256": "24f9c0d7419b58b602c431338be833629d6a881737eb3646bf7f75d0fc4c31d2"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_256x256@2x.png",
+      "sha256": "680cc881936176d5fbfa38e12d194df89ef198e9e8f7f181d3d28533912baffa"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_32x32.png",
+      "sha256": "564b09961d80121e91a210c1b5c04c68a3617cd6bf725a5411293471edaf4110"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_512x512.png",
+      "sha256": "680cc881936176d5fbfa38e12d194df89ef198e9e8f7f181d3d28533912baffa"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_16x16.png",
+      "sha256": "ffe5c5c42cc5e770bce997a5da0aec2edd10ffc0166ba97995eed2e3e5f7d627"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_16x16@2x.png",
+      "sha256": "c132eb4942af7c93a703d0bed17dc6abbc708be8e8ee8ca477bd7fcae99c083f"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_128x128@2x.png",
+      "sha256": "2db0eff5122bca935e830d3738241aa636789f38b109037299c7010354bdc62c"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_512x512@2x.png",
+      "sha256": "65980c5289ccd58ac08c30f5d17a6700783888cd30e3a3bdd3df8542fbb382d9"
+    },
+    {
+      "path": "CotEditor/Resources/Assets.xcassets/Icons/Document Icons/SquareBrackets-fill.iconset/icon_256x256.png",
+      "sha256": "2db0eff5122bca935e830d3738241aa636789f38b109037299c7010354bdc62c"
+    },
+    {
+      "path": "Packages/MacUI/Sources/ControlUI/Assets.xcassets/chevron.up.chevron.down.narrow.imageset/chevron.up.chevron.down.narrow.svg",
+      "sha256": "df04b464d41bb266a970e8e9aa026a8fe5ef6e5541a971fce5aeb55bfbe94fbe"
+    }
+  ]
+}

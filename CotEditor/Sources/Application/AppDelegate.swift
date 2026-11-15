@@ -1,3 +1,4 @@
+// 수정: DocumentSafer Text는 별도 보호 앱 진입점을 사용한다.
 //
 //  AppDelegate.swift
 //
@@ -66,7 +67,6 @@ extension Logger {
 }
 
 
-@main
 @MainActor final class AppDelegate: NSObject, NSApplicationDelegate {
     
     // MARK: Enums
