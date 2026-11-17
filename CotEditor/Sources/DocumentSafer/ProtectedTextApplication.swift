@@ -40,7 +40,7 @@ import DocumentSaferText
         NSApp.mainMenu = menu
     }
 
-    /// 시작 시 문서 이벤트가 없다면 새 보호 초안을 표시한다.
+    /// 시작 알림을 받아 문서 이벤트가 없으면 현재 환경에 맞는 새 TXT 초안을 표시한다.
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.activate(ignoringOtherApps: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in

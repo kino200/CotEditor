@@ -17,6 +17,12 @@
 
 내부 Swift 패키지/클래스의 DocumentSaferText 이름은 프로토콜·코드 호환을 위해 유지한다. 앱의 이름, 실행 파일, 번들 ID, 지역화된 이름과 메뉴는 maEditor다. 원본 CotEditor 자동 업데이트 채널을 사용하지 않는다. 이 릴리스는 설치 PKG로 갱신하며 별도 업데이트 서비스를 추가하지 않는다.
 
+## 단독 사용
+
+DocumentSafer가 설치·실행되지 않은 환경에서는 maEditor를 직접 실행해 새 일반 TXT와 기존 일반 TXT를 열고 편집·저장한다. 암복호화 서비스와 연결 도구는 호출하지 않는다. 암호문 마커가 있는 문서는 관리앱 필요 오류로 거부한다. 연결 도구가 설치되어 있어도 관리앱이 없으면 단독 일반 편집이 가능하다.
+
+실제 설치 판별 범위는 시스템/사용자 Applications 아래의 운영·데몬·시험 앱 설치본 및 실행 중인 정식 번들 ID다. 루트 밖의 미실행 개발·백업 등록은 제외한다. 관리앱을 감지한 같은 세션은 연결 실패/로그아웃/제거 후에도 관리 상태를 유지하고 저장 실패 시 원본을 보존한다. 단독 편집 중 새 설치는 다음 저장 시 정책을 조회한다. 기존 보호 UI의 클립보드·인쇄·자동복구·외부 본문 조회 제한은 그대로다.
+
 ## 관리앱과 호환성
 
 DocumentSafer와 연결 도구는 **정확한 편집기 ID와 MarkAny 서명**을 검증한다. 기존 `com.markany.DocumentSaferText`만 아는 관리앱으로는 maEditor를 인증할 수 없다. `5efac3c` 커밋 또는 다음 변경이 포함된 DocumentSafer를 먼저 준비해야 한다.
@@ -82,9 +88,9 @@ CotEditor 소스의 Apache-2.0은 조건을 지키는 수정·상용 재배포�
 
 현재 작업 범위는 maEditor 바이너리/PKG다. 다른 Craft/HOP 앱의 상표·MPL·폰트 문제를 해결한 것으로 확대하지 않는다. 공급 DRM 모듈이 없는 이 PKG의 오픈소스 보완과 전체 DocumentSafer 제품의 계약·암호 수출입·상표 권원 검토는 구분한다.
 
-## 검증 기록
+## 검증 기록 · 11.17.1702 (단독 실행 추가 전)
 
-2026-11-17 한국시간 기준. 최종 `maEditor 1.0.0 (11.17.1702)` 패키지 생성을 완료했다.
+2026-11-17 한국시간 기준. 단독 실행 추가 전 `maEditor 1.0.0 (11.17.1702)` 패키지 생성을 완료했다.
 
 | 검사 | 실제 결과 |
 | --- | --- |
@@ -112,3 +118,24 @@ CotEditor 소스의 Apache-2.0은 조건을 지키는 수정·상용 재배포�
 CotEditor는 미커밋 변경으로 빌드했으며 manifest에 `workspace_dirty: true`를 기록했다. 기존 정수 빌드 1·2는 중간 검증 자료로 보존하고 최종 배포물로 안내하지 않는다. 동일 빌드 번호로 완료 manifest를 덮어쓰지 않으므로 다음 신규 빌드는 `build_number:`를 생략해 새 한국시간 번호로 생성한다.
 
 이번 작업은 설치하지 않은 PKG 생성·공증·정적 검증 범위다. 실제 Intel 기기 실행, 깨끗한 기기 설치, 새 이름/ID 설치본으로 운영 서버 정책을 사용한 GUI 통합 시험은 아직 수행하지 않았다. 새 ID를 지원하는 DocumentSafer를 함께 준비해야 한다. 기존 DocumentSafer 이력에 포함됐던 공증 API 키 폐기·재발급도 남아 있으며 [Git 보호 안내](git-sensitive-files.md)에 기록했다. 패키지 생성 단계에서는 사용자 문서와 기존 설치 앱을 변경하지 않았고 commit/push도 수행하지 않았다. 이후 사용자가 배포 준비 소스의 현재 브랜치 커밋을 요청했다. 이미 생성한 PKG와 manifest는 빌드 당시의 미커밋 상태 기록을 그대로 보존한다.
+
+## 단독 지원 검증 · 11.17.2027
+
+2026-11-17 한국시간 기준. `maEditor 1.0.0 (11.17.2027)`를 새 아카이브부터 생성했으며 `bundle exec fastlane mac distribute_pkg`는 20:34 종료 코드 0으로 완료했다. 앱과 PKG의 Apple 공증·staple·Gatekeeper 승인, Universal slice와 실제 payload 검사가 통과했다.
+
+- 최신 PKG. `build/maEditor/dist/1.0.0/11.17.2027/maEditor-1.0.0-11.17.2027-universal.pkg`.
+- SHA-256. `9b3bcf21e59ad337c1307b1bee3e5041133753abd141a9eb2e806fd15eed76d7`.
+- 로그. `build/maEditor/logs/standalone-1.0.0-11.17.2027.log`.
+- `swift test --disable-sandbox --package-path Packages/DocumentSaferText`. 단독 회귀 6개와 기존 회귀 4개, 합계 10개 통과.
+- 실제 기본 서비스. 아래 smoke 명령으로 현재 기기의 미설치 판별, 새/기존 TXT 일반 저장·재열람, 암호문/암호화 요청 거부를 확인했다. 실행 중인 관리앱이나 설치본이 있으면 이 smoke는 중단하며 관리 상태를 변경하지 않는다.
+- 실제 앱. DocumentSafer를 실행하지 않고 공증 빌드를 `open -n`으로 실행했다. 시작 완료와 `새 문서.txt — maEditor` 창(900×682)을 창 메타데이터로 확인했다. 문서 본문을 외부에서 읽거나 GUI 키 입력으로 자동 편집하지 않았다. 실행한 아카이브와 배포 앱 실행 파일의 SHA-256이 같다.
+- 관리 환경. 설치/연결 실패·정책 변경·관리앱 제거 시 원본 보존 회귀와 기존 DocumentSafer TXT 메모리 왕복 시험 1개가 통과했다. 실제 운영 서버의 새 로그인/GUI 암호화 시험은 이번 범위가 아니다.
+- 민감 정보. 전체 변경 파일을 임시 Git 인덱스에서 검사해 통과했다. 실제 인덱스는 변경하지 않았고 commit/push도 하지 않았다.
+
+```sh
+swiftc Packages/DocumentSaferText/Sources/DocumentSaferText/*.swift \
+  script/standalone_smoke.swift -o /tmp/maeditor-standalone-smoke
+/tmp/maeditor-standalone-smoke
+```
+
+이전 `11.17.1702`는 단독 실행 추가 전 패키지이며 이번 기능은 새 PKG에 포함된다. 기존 설치 앱을 교체하거나 연결 도구를 설치하지 않았다. 현재 시험 앱은 아카이브 경로에서 실행했으며 새 PKG 설치 전에는 열린 maEditor 문서를 저장하고 종료해야 한다.

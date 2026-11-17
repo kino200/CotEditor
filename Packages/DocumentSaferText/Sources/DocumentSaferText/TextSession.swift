@@ -7,9 +7,49 @@ public protocol TextService {
     func encrypt(_ plaintext: Data, original: Data?, name: String) throws -> Data
 }
 
-public struct DocumentSaferService: TextService {
-    /// 인자 없이 고정 서명 브리지를 사용하는 서비스 값을 만든다.
-    public init() {}
+public final class DocumentSaferService: TextService {
+    private let managerIsPresent: () -> Bool
+    private let managed: any TextService
+    private var managementRequired = false
+
+    /// 인자 없이 관리앱 설치를 확인하는 서비스를 만든다. 관리앱이 없으면 일반 TXT만 허용한다.
+    public convenience init() {
+        self.init(managerIsPresent: DocumentSaferInstallation.isPresent, managed: BridgeTextService())
+    }
+
+    /// 설치 확인 함수와 인증 서비스를 받아 정책 전환을 시험 가능한 서비스로 구성한다.
+    init(managerIsPresent: @escaping () -> Bool, managed: any TextService) {
+        self.managerIsPresent = managerIsPresent
+        self.managed = managed
+    }
+
+    /// 관리앱이 없으면 암호화 OFF를 반환한다. 감지된 관리 환경의 오류는 그대로 전달한다.
+    public func automaticEncryption() throws -> Bool {
+        try requiresManager() ? managed.automaticEncryption() : false
+    }
+
+    /// 암호문을 받아 관리앱이 있을 때만 복호화한다. 단독 모드에서는 backend를 호출하지 않는다.
+    public func decrypt(_ ciphertext: Data) throws -> Data {
+        guard try requiresManager() else { throw TextFailure.requiresDocumentSafer }
+        return try managed.decrypt(ciphertext)
+    }
+
+    /// 본문·원본·파일명을 받아 관리앱이 있을 때만 암호화한다. 단독 모드의 암호화는 거부한다.
+    public func encrypt(_ plaintext: Data, original: Data?, name: String) throws -> Data {
+        guard try requiresManager() else { throw TextFailure.requiresDocumentSafer }
+        return try managed.encrypt(plaintext, original: original, name: name)
+    }
+
+    /// 현재 설치 상태를 반환하고 한 번 감지한 관리 환경이 사라지면 세션의 평문 전환을 거부한다.
+    private func requiresManager() throws -> Bool {
+        let present = managerIsPresent()
+        if present { managementRequired = true }
+        guard !managementRequired || present else { throw TextFailure.unavailable }
+        return present
+    }
+}
+
+private struct BridgeTextService: TextService {
     /// 현재 로그인·TXT 자동암호화 정책을 반환한다. 연결 실패는 거부한다.
     public func automaticEncryption() throws -> Bool { try TextBridge().automaticEncryption() }
     /// 암호문을 받아 새 인증 채널에서 복호화한 TXT 바이트를 반환한다.

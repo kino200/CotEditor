@@ -9,7 +9,7 @@ Source license: Apache License 2.0 (CotEditor-Apache.txt).
 
 Modified by MarkAny in November 2026 for memory-only protected TXT editing,
 DocumentSafer authentication/encrypted saving, independent maEditor identity,
-original replacement artwork, and signed/notarized installer packaging.
+original replacement artwork, standalone ordinary TXT editing, and signed/notarized installer packaging.
 CotEditor is acknowledged as the source project, not the publisher or endorser
 of this modified distribution. No upstream noncommercial image is bundled.
 Replacement artwork is licensed under Apache-2.0; see the source ATTRIBUTION.md.
@@ -29,3 +29,8 @@ a compatible signed DocumentSafer manager configured for this editor ID:
 com.markany.securedocs.textedit, editor protocol 6.
 A manager built for the former com.markany.DocumentSaferText identity must be
 updated together with the bridge; authentication is never weakened as fallback.
+
+Without a manager installed or running, ordinary TXT editing is available.
+Standalone use does not encrypt or decrypt documents. Encrypted inputs require
+DocumentSafer. Failure of an existing managed session never enables plaintext
+saving as a fallback.

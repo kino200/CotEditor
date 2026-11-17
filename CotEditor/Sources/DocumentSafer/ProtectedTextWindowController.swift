@@ -117,11 +117,11 @@ import ValueRange
         }
     }
 
-    /// 보호 상태·저장 상태와 본문 없는 창 제목을 갱신한다.
+    /// 저장 성공 여부를 받아 보호 상태와 창 제목을 갱신한다. 일반 TXT에는 암호화 정책을 단정하지 않는다.
     private func refreshStatus(saved: Bool = false) {
         let name = fileURL?.lastPathComponent ?? "새 문서.txt"
         window?.title = name + " — maEditor"
-        let protection = session.isProtected ? "보호 문서 · 암호화 저장" : "일반 문서 · 자동암호화 꺼짐"
+        let protection = session.isProtected ? "보호 문서 · 암호화 저장" : "일반 문서 · TXT 저장"
         status.stringValue = protection + (saved ? " · 저장 완료" : "")
     }
 }

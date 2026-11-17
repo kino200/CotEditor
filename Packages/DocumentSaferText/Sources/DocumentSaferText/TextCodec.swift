@@ -3,10 +3,11 @@ import Foundation
 import CoreFoundation
 
 public enum TextFailure: Error, LocalizedError {
-    case unavailable, unauthorized, malformed, changed, encoding, destination
+    case unavailable, unauthorized, malformed, changed, encoding, destination, requiresDocumentSafer
 
     public var errorDescription: String? {
         switch self {
+        case .requiresDocumentSafer: return "암호화 문서를 사용하려면 DocumentSafer를 설치하고 실행해 로그인해 주세요. 단독 실행에서는 일반 TXT만 지원합니다."
         case .unavailable: return "DocumentSafer를 실행해 로그인하고 연결 도구를 업데이트해 주세요."
         case .unauthorized: return "DocumentSafer가 문서 또는 현재 정책·세션을 거부했습니다."
         case .malformed: return "지원되지 않거나 손상된 문서입니다."
