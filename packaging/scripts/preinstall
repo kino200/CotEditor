@@ -1,0 +1,10 @@
+#!/bin/sh
+# 공용 연결 도구 교체 전에 편집기와 관리앱의 정상 종료를 확인한다.
+set -eu
+for name in maEditor 'DocumentSafer Text' DocumentSafer wordcraft gridcraft deckcraft HOP; do
+    if /usr/bin/pgrep -i -x "$name" >/dev/null; then
+        echo "maEditor 설치를 계속하려면 $name 문서를 저장하고 앱을 종료해 주세요." >&2
+        exit 1
+    fi
+done
+exit 0

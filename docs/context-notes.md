@@ -23,3 +23,29 @@
 - 최종 검사. CotEditor TXT 코어 Swift 4개 통과. DocumentSafer 전체 Swift 38개 중 22개 실행 통과/외부 경로 16개 skipped 후 TXT 외부 fixture, 신규 저장본, 기존 편집 저장본을 실제 경로로 각각 실행해 통과했다. 엄격 원본 정책 거부와 비인가 부모 연결 거부, 메뉴 정책 23 assertions와 편집기 설정 회귀, Release arm64 빌드, Developer ID/권한/원본 이미지 396개 감사도 통과했다.
 - 실제 시험은 지원 정책의 macOS ARM64 TXT 왕복 범위다. 운영 서버 정책 전체, Intel 실행, OS 전체 파일 I/O 추적, 입력기·관리자·스왑·촬영 차단, Apple 공증은 검증 범위 밖이다. 자동암호화 OFF는 일반 저장을 허용하며 ON 성공 시험에는 NOTEPAD의 활성 예외 정책도 1이어야 한다. 최초 OFF 결과는 시험 자료로 별도 보존했다.
 - 정리. 사용자 재열람 확인 후 TXT 앱과 시험 DocumentSafer를 정상 종료하고 시험 계정을 로그아웃했다. 두 프로세스·설치 도구·모의 서버 35001 리스너 종료를 확인했다. 시험 앱/임시 빌드 등록을 해제하고 설치된 운영 DocumentSafer와 DocumentSafer Text를 재등록했다. 기존 백업과 암호문 시험 자료는 보존했으며 커밋/push는 하지 않았다.
+
+## MAEDITOR-DIST · 2026-11-17
+
+- 앱 이름은 maEditor, 번들 ID는 com.markany.securedocs.textedit로 사용자가 지정했다. 회사 제품 버전 1.0.0(1)로 상위 beta 버전과 구분한다.
+- 원본 이미지 396개 감사 및 30개 잠금 의존성 고지가 기존에 있지만 최종 PKG의 자동 감사·공증이 없었다. 새 fastlane 경로에 포함한다.
+- 원본 CotEditor 소스/내부 Swift 타입 이름은 유지하며 배포 UI만 구분한다. 두 scheme의 기존 변경은 제품 이름 변경뿐임을 실제 diff로 확인했다.
+- 기존 관리앱/브리지는 정확한 옛 TXT ID를 인증한다. 새 ID를 반영한 관리앱과 연결 도구가 필요하며 Team 전체 허용으로 완화하지 않는다.
+- 기존 MobileDOCS .env의 ASC_* 설정 및 외부 .p8, 키체인의 Developer ID 인증서를 참조한다. 비밀 값은 출력하거나 저장소에 복사하지 않는다.
+
+- 초기 루트 라이선스 30개 검사에서 빠졌던 Tree-sitter lib/src/unicode/LICENSE(Unicode/ICU 통합 고지)와 Sparkle Vendor/ed25519-sparkle/license.txt를 추가했다. 30개 고정 revision, 32개 고지 전문과 해시가 일치한다. 원문 공백을 보존하기 위해 ThirdParty.txt만 Git 공백 교정에서 제외했다.
+- 실제 Universal 아카이브가 생성됐고 앱 metadata/지역화 이름/396개 원본 이미지/entitlement/번들 고지가 통과했다. 초기 codesign CLI에는 inline 요구식의 = 접두사가 빠졌고, 현재 lipo의 다중 verify_arch 인자도 실패했다. = 접두사와 -archs 결과 집합 검사로 수정했다. 앱/정책 인증은 완화하지 않았다.
+- 앱 공증 d38bf851-f010-41e4-8451-40a70bd1dd31 및 Gatekeeper 실행 검사가 통과했다. 첫 PKG 공증 ec7edb7f-7d81-4402-bb80-ebb9ef02a372도 통과했으나 payload 검사에서 연결 도구의 필요한 앱 그룹을 빈 권한으로 잘못 가정해 중단됐다. 실제 서명의 단일 9N6VX5RKP7.DocumentSaferEditor 그룹과 정확히 비교하도록 수정했고 PKG 검증을 통과했다.
+- Ruby fastlane lane에 검증한 아카이브 재사용 옵션을 추가했다. 현재 작업 트리 기준 커밋을 아카이브의 소스 커밋으로 오인하지 않도록 workspace_commit/workspace_dirty/provided_archive를 기록한다. 기존 유효한 앱 공증 티켓은 재사용한다.
+- TXT 코어 4개, 관리앱 TXT 메모리 왕복 1개, 설정 이전 회귀, 새 아카이브의 실제 관리앱 호환성 승인/옛 ID 거부, 라이선스 감사 실패 회귀 3개, 최적화 Python 검사 생략 거부, 실행 중 편집기 설치 차단을 확인했다. 서명 연결 도구가 비인가 Python 부모를 본문 없이 거부했다.
+- DocumentSafer 저장소에 별도로 변경된 ScreenCaptureBlocker.swift와 document_capture_hotkeys_test.rb는 이번 작업의 변경이 아니며 보존한다. 관리앱 전체를 설치하거나 해당 변경을 되돌리지 않는다.
+
+- 2026-11-17 후속 요청. DocumentSafer 연동은 5efac3c, 민감 파일 추적 정리는 30015ed로 커밋됐다. 기존 PKG 1.0.0(1)의 manifest는 커밋 전 기준을 기록하므로 보존하고, 최신 관리앱 커밋을 기록하는 1.0.0(2)를 전체 fastlane 경로로 생성한다. CotEditor 변경은 아직 미커밋이며 검증 manifest에도 이를 명시한다.
+- CotEditor에도 Git 훅 회귀 시험과 새 clone의 훅 활성화 안내를 추가했다. 검사 대상은 실제 인덱스/전송 커밋이며 인증 자료나 산출물을 stage하지 않는다. 현재 `.githooks` 로컬 설정을 확인했다.
+
+- 사용자 요청에 따라 기본 빌드 번호를 한국시간 MM.dd.HHmm으로 변경했다. 일반 fastlane은 실행 시작 시각을 사용하며 재시도는 같은 번호를 명시할 수 있다. 최종 검증 번호는 11.17.1702이다. PKG 영수증 버전도 앱 CFBundleVersion과 일치시키고 비교한다. 기존 정수 빌드의 중간 검증 결과는 보존한다.
+- 정수 빌드 1.0.0(2)의 전체 fastlane 실행은 16:59에 성공했다. 최종 제공물은 사용자가 이후 지정한 날짜 형식의 빌드로 교체한다. Ruby 3.4 환경에 minitest가 없어 테스트 의존성을 추가하지 않고 실제 Fastfile을 로드하는 14개 검사로 구성했으며 통과했다.
+
+- 최종 1.0.0(11.17.1702)는 17:07 Universal 아카이브 생성 후 PKG 공증 도중 실행이 중단됐다. 남아 있는 아카이브의 서명·유효한 공증 티켓을 확인하고 archive 옵션으로 재개했으며 19:56 fastlane 종료 코드 0을 확인했다. 앱/PKG Gatekeeper 승인과 실제 payload의 빌드 번호·서명·CPU·고지·root 소유 검사를 통과했다. PKG SHA-256은 2d7aa80018058c8e9556dafa64957ce9198eb926e3ef1a112869fdd69b239e6c이다.
+- 최종 manifest는 관리앱 5efac3c, CotEditor 미커밋 상태, 아카이브 재사용을 명시한다. Git 민감 파일 전체 변경 검사와 2개 회귀, 빌드 번호 14개 검사가 통과했다. 설치·운영 GUI 시험·커밋·push는 하지 않았다. 기존 공증 API 키 교체와 Intel/깨끗한 기기 설치 검증은 후속 조건이다.
+
+- 2026-11-17 커밋 승인. 사용자 요청으로 현재 codex/documentsafer-memory-txt에 Git 보호와 maEditor 배포 준비를 분리해 커밋한다. 빌드 번호 14개 검사·Git 보호 2개·라이선스 3개 회귀를 다시 통과했고 최종 PKG 해시가 동일하다. 이 커밋은 기존 서명 PKG/manifest를 다시 생성하거나 과거 provenance를 변경하지 않는다. push는 하지 않는다.

@@ -25,7 +25,7 @@ import DocumentSaferText
         NSWindow.allowsAutomaticWindowTabbing = false
         let menu = NSMenu()
         for (title, items) in [
-            ("DocumentSafer Text", [("DocumentSafer Text 정보", "about:", ""), ("종료", "terminate:", "q")]),
+            ("maEditor", [("maEditor 정보", "about:", ""), ("오픈소스 라이선스…", "showLicenses:", ""), ("종료", "terminate:", "q")]),
             ("파일", [("새 문서", "newText:", "n"), ("열기…", "openText:", "o"), ("저장", "saveText:", "s"), ("닫기", "performClose:", "w")]),
             ("편집", [("실행 취소", "undo:", "z"), ("다시 실행", "redo:", "Z"), ("모두 선택", "selectAll:", "a")]),
         ] {
@@ -97,9 +97,15 @@ import DocumentSaferText
     /// 배포본 이름과 원본 소스의 저작권·라이선스를 안내한다.
     @objc func about(_ sender: Any?) {
         NSApp.orderFrontStandardAboutPanel(options: [
-            .applicationName: "DocumentSafer Text",
+            .applicationName: "maEditor",
             .credits: NSAttributedString(string: "CotEditor 기반 TXT 편집기. CotEditor 소스는 Apache License 2.0입니다. 라이선스와 수정·리소스 고지는 앱 Resources/Licenses에 포함됩니다."),
         ])
+    }
+
+    /// 사용자가 요청한 배포 라이선스 폴더를 Finder에서 연다. sender는 메뉴 발신자이며 반환값은 없다.
+    @objc func showLicenses(_ sender: Any?) {
+        guard let url = Bundle.main.resourceURL?.appendingPathComponent("Licenses", isDirectory: true) else { return }
+        NSWorkspace.shared.open(url)
     }
 
     /// 선택 경로의 중복 창을 피하고 초기화 실패 시 본문 없는 오류만 표시한다.

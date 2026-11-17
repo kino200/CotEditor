@@ -1,4 +1,4 @@
-DocumentSafer Text is a modified distribution of CotEditor.
+maEditor is a modified distribution of CotEditor.
 Original source copyrights are retained in source headers and CotEditor-Apache.txt.
-The original noncommercial image resources are excluded or replaced by original DocumentSafer Text resources licensed under Apache License 2.0.
+The original noncommercial image resources are excluded or replaced by original maEditor resources licensed under Apache License 2.0.
 Changes include TXT memory encryption, dedicated protected UI, signed bridge integration, and new artwork.

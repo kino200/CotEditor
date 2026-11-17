@@ -1,6 +1,6 @@
-# DocumentSafer Text
+# maEditor
 
-CotEditor 기반의 DocumentSafer 연동 TXT 편집기입니다. 원본 CotEditor와 구분되는 배포 이름과 번들 ID `com.markany.DocumentSaferText`를 사용합니다. macOS 26 이상이 필요합니다.
+CotEditor 기반의 DocumentSafer 연동 TXT 편집기입니다. 원본 CotEditor와 구분되는 배포 이름과 번들 ID `com.markany.securedocs.textedit`를 사용합니다. macOS 26 이상이 필요합니다.
 
 ## 동작
 
@@ -9,7 +9,7 @@ CotEditor 기반의 DocumentSafer 연동 TXT 편집기입니다. 원본 CotEdito
 - UTF-8, BOM을 가진 UTF-16/32, CP949 호환 한국어 인코딩의 무손실 왕복과 기존 BOM·개행을 지원합니다. 모호한 임의 레거시 인코딩이나 표현할 수 없는 문자는 거부합니다.
 - CotEditor의 `EditorTextView`를 사용한 전용 TXT 창입니다. 원본의 전체 메뉴를 제공하지 않으며 자동복구·버전 저장·클립보드·인쇄·찾기 기록·서비스·AppleScript·원격 편집·접근성 본문 조회를 연결하지 않습니다. 다른 이름으로 저장은 새 문서의 최초 저장에만 사용합니다.
 
-DocumentSafer의 **문서 편집 앱 → TXT → DocumentSafer Text**를 선택합니다. 기존 TXT는 ⌘O로 열고, 새 문서는 ⌘N, 저장은 ⌘S를 사용합니다. 보호 문서의 실제 저장 경로에는 암호문만 기록하며, 보호 창의 접근성 제한 때문에 본문을 읽는 보조 도구는 사용할 수 없습니다.
+DocumentSafer의 **문서 편집 앱 → TXT → maEditor**를 선택합니다. 기존 TXT는 ⌘O로 열고, 새 문서는 ⌘N, 저장은 ⌘S를 사용합니다. 보호 문서의 실제 저장 경로에는 암호문만 기록하며, 보호 창의 접근성 제한 때문에 본문을 읽는 보조 도구는 사용할 수 없습니다.
 
 ## 빌드
 
@@ -27,6 +27,12 @@ swift test --package-path Packages/DocumentSaferText
 
 CotEditor 원본 소스의 Apache License 2.0 및 저작권 고지를 유지합니다. 원본의 비상업·변경금지 이미지 허가는 수정 배포 이미지에 사용하지 않으며, 제품에 포함되는 이미지는 자체 도형으로 교체하거나 제거했습니다. 신규 이미지·생성 소스는 Apache-2.0이며 [ATTRIBUTION.md](ATTRIBUTION.md)에 기록했습니다. 원본 이미지 해시 목록과 배포 감사 스크립트가 재유입을 검사합니다.
 
-원본 테스트 전용 이미지 fixture의 라이선스는 원본 [LICENSE](LICENSE)를 따르며 앱 번들에 포함하지 않습니다. 제품에는 원본 소스와 고정 의존성의 라이선스 전문을 포함합니다. 이 작업은 Apple 공증·공개 릴리스나 원본 CotEditor의 상표 사용 허가를 의미하지 않습니다.
+원본 테스트 전용 이미지 fixture의 라이선스는 원본 [LICENSE](LICENSE)를 따르며 앱 번들에 포함하지 않습니다. 제품에는 원본 소스와 고정 의존성의 라이선스 전문을 포함합니다. 최종 PKG의 공증·서명·고지 검사는 fastlane 배포 경로에서 수행합니다. 원본 CotEditor의 상표 사용 허가나 전체 저장소 소스 ZIP의 상용 배포 승인을 의미하지 않습니다.
 
 원본 프로젝트는 [CotEditor](https://github.com/coteditor/CotEditor)입니다. 원본 소스의 저작권은 © 2005–2009 nakamuxu, © 2011, 2014 usami-k, © 2013–2026 1024jp에게 있습니다. 수정 내역은 [HISTORY.md](HISTORY.md)에 기록합니다.
+
+## maEditor 배포 패키지
+
+회사 제품 버전은 1.0.0이며 빌드 번호는 fastlane 시작 시 한국시간 `MM.dd.HHmm`으로 자동 생성하며 `build_number:`로 지정할 수도 있습니다. macOS 26 이상에서 사용합니다. Universal 앱·공용 연결 도구를 포함한 서명·공증 PKG의 생성과 관리앱 호환 조건은 [배포 안내](docs/maeditor-distribution.md)를 참고하세요.
+
+인증 파일·정책 응답·배포 산출물을 업로드하지 않도록 새 clone에서는 [Git 보호 설정](docs/git-sensitive-files.md)의 로컬 훅도 활성화하세요.

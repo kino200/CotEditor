@@ -12,3 +12,12 @@
 
 - 인증 파일·운영 정책·배포 산출물의 Git 제외 규칙과 실제 commit/push 대상의 민감 파일 검사 훅을 추가한다. 비밀 값은 출력하지 않는다.
 - 임시 저장소 회귀 2개와 전체 변경 파일 검사를 통과했다. 새 clone의 훅 활성화 방법 및 로컬 훅·과거 이력의 한계는 docs/git-sensitive-files.md에 기록한다.
+
+## 2026-11-17 · MAEDITOR-DIST
+
+- CotEditor 기반 회사 배포본을 maEditor / com.markany.securedocs.textedit, 제품 버전 1.0.0과 한국시간 MM.dd.HHmm 빌드 번호로 구분한다.
+- 기존 인증을 참조하는 fastlane Universal 앱·연결 도구·서명/공증 PKG와 실제 payload 감사를 추가한다.
+- Unicode/ICU·Ed25519 하위 고지 누락을 보완하고 30개 고정 입력/32개 고지 manifest 및 사용자 라이선스 메뉴를 포함한다. 검증 결과와 범위는 docs/maeditor-distribution.md에 기록한다.
+
+- 사용자 지정 MM.dd.HHmm 빌드 번호를 한국시간으로 자동 생성한다. 명시 번호의 날짜·시각을 검증하고 앱/PKG 영수증/파일명에 같은 값을 사용한다.
+- 검증. 1.0.0(11.17.1702) Universal PKG의 fastlane 생성·Apple 공증·staple·Gatekeeper·실제 payload 검사를 통과했다. 빌드 번호 14개 검사, TXT 코어 4개/메모리 왕복 1개, 라이선스 회귀 3개와 Git 보호 회귀 2개를 통과했다. 설치·운영 GUI 시험은 별도다. 검증 패키지는 커밋 전 작업 트리에서 생성했다.

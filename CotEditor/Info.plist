@@ -22,11 +22,11 @@
 		</dict>
 	</array>
 	<key>CFBundleSpokenName</key>
-	<string>DocumentSafer Text</string>
+	<string>maEditor</string>
 	<key>NSAppleScriptEnabled</key>
 	<false/>
 	<key>CFBundleDisplayName</key>
-	<string>DocumentSafer Text</string>
+	<string>maEditor</string>
 	<key>DocumentSaferEditorProtocol</key>
 	<integer>6</integer>
 	<key>NSQuitAlwaysKeepsWindows</key>

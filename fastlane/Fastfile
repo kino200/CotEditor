@@ -1,0 +1,140 @@
+# maEditor와 공용 연결 도구를 Universal로 빌드하고 서명·공증 PKG를 생성한다.
+require "fileutils"
+require "json"
+require "digest"
+require "dotenv"
+require "open3"
+require "date"
+require "rbconfig"
+
+ROOT = File.expand_path("..", __dir__)
+TEAM = "9N6VX5RKP7"
+APP_ID = "com.markany.securedocs.textedit"
+BRIDGE_ID = "com.markany.DocumentSaferEditorBridge"
+APP_IDENTITY = "Developer ID Application: MarkAny Inc. (#{TEAM})"
+INSTALLER_IDENTITY = "Developer ID Installer: MarkAny Inc. (#{TEAM})"
+
+default_platform(:mac)
+
+# 배포 옵션·기준 시각을 받아 제품 버전과 한국시간 MM.dd.HHmm 빌드 번호를 검증해 반환한다.
+def release_version(options, now: Time.now)
+  version = options.fetch(:version, "1.0.0").to_s
+  build = options.fetch(:build_number) { now.getlocal("+09:00").strftime("%m.%d.%H%M") }.to_s
+  parts = /\A(0[1-9]|1[0-2])\.(0[1-9]|[12]\d|3[01])\.([01]\d|2[0-3])([0-5]\d)\z/.match(build)
+  # 연도가 없는 형식이므로 윤일은 허용하되 4월 31일처럼 존재하지 않는 날짜는 거부한다.
+  valid_date = parts && Date.valid_date?(2000, parts[1].to_i, parts[2].to_i)
+  UI.user_error!("version은 X.Y.Z, build_number는 한국시간 MM.dd.HHmm 형식이어야 합니다.") unless version.match?(/\A\d+\.\d+\.\d+\z/) && valid_date
+  [version, build]
+end
+
+# 외부 DocumentSafer 루트의 인증 설정을 읽어 참조 경로만 반환한다. 키 내용은 출력하지 않는다.
+def release_auth(root)
+  values = File.file?(File.join(root, ".env")) ? Dotenv.parse(File.join(root, ".env")) : {}
+  auth = %w[ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_PATH].to_h { |key| [key, ENV[key] || values[key]] }
+  UI.user_error!("MobileDOCS .env 또는 ASC_* 환경 변수의 공증 설정이 필요합니다.") if auth.values.any? { |value| value.to_s.empty? }
+  auth["ASC_KEY_PATH"] = File.expand_path(auth.fetch("ASC_KEY_PATH"), root)
+  UI.user_error!("외부 공증 키 파일을 찾을 수 없습니다.") unless File.file?(auth["ASC_KEY_PATH"])
+  auth
+end
+
+# Mach-O 경로를 받아 두 CPU slice가 모두 있는지 확인하고 불일치 시 배포를 중단한다.
+def verify_universal(path)
+  output, status = Open3.capture2("/usr/bin/lipo", "-archs", path)
+  UI.user_error!("Universal 바이너리가 아닙니다. #{path}") unless status.success? && output.split.sort == %w[arm64 x86_64]
+end
+
+platform :mac do
+  desc "Universal maEditor 앱·공용 연결 도구의 서명/공증 PKG 생성. documentsafer_root:MobileDOCS경로"
+  lane :distribute_pkg do |options|
+    version, build = release_version(options)
+    sh(RbConfig.ruby, File.join(ROOT, "script/test_release_version.rb"))
+    source = File.expand_path(options[:documentsafer_root] || ENV.fetch("DOCUMENTSAFER_DISTRIBUTION_ROOT"))
+    bridge_package = File.join(source, "Modules/DocumentSaferCrypto")
+    UI.user_error!("편집 연동이 있는 MobileDOCS 루트가 필요합니다.") unless File.file?(File.join(bridge_package, "Package.swift"))
+    ipc = File.read(File.join(bridge_package, "Sources/DocumentSaferEditorIPC/EditorIPC.swift"))
+    UI.user_error!("DocumentSafer/브리지 소스가 maEditor ID를 지원하지 않습니다.") unless ipc.include?("textEditorID = \"#{APP_ID}\"")
+    auth = release_auth(source)
+    api_key = app_store_connect_api_key(key_id: auth["ASC_KEY_ID"], issuer_id: auth["ASC_ISSUER_ID"], key_filepath: auth["ASC_KEY_PATH"], duration: 1200, in_house: false, set_spaceship_token: false)
+    # 오류 요약의 lane context에 개인 키가 남지 않도록 메모리 참조만 유지한다.
+    Fastlane::Actions.lane_context.delete(Fastlane::Actions::SharedValues::APP_STORE_CONNECT_API_KEY)
+    work = File.join(ROOT, "build/maEditor/work/#{version}-#{build}")
+    dist = File.join(ROOT, "build/maEditor/dist/#{version}/#{build}")
+    UI.user_error!("같은 버전의 배포물이 이미 있습니다. build_number를 올리거나 이전 산출물을 별도 보관하세요.") if File.exist?(File.join(dist, "release.json"))
+    FileUtils.mkdir_p([work, dist])
+    packages = File.expand_path(options[:source_packages] || File.join(ROOT, "build/maEditor/SourcePackages"))
+    project = File.join(ROOT, "CotEditor.xcodeproj")
+    common = ["-project", project, "-scheme", "CotEditor", "-clonedSourcePackagesDirPath", packages, "-onlyUsePackageVersionsFromResolvedFile"]
+    sh("xcodebuild", *common, "-resolvePackageDependencies") unless File.directory?(File.join(packages, "checkouts"))
+    sh("python3", File.join(ROOT, "script/verify_licenses.py"), File.join(packages, "checkouts"))
+    sh("python3", File.join(ROOT, "script/audit_distribution.py"))
+    sh("python3", File.join(ROOT, "script/test_release_audits.py"))
+    sh("swift", "test", "--disable-sandbox", "--package-path", File.join(ROOT, "Packages/DocumentSaferText"))
+    sh("swift", "test", "--disable-sandbox", "--package-path", bridge_package, "--filter", "DocumentEditingTests/testTextMemoryRoundTripAndIsolation")
+    archive = options[:archive] ? File.expand_path(options[:archive]) : File.join(work, "maEditor.xcarchive")
+    unless options[:archive]
+    # 잠금된 SwiftLint 플러그인 소스를 위에서 대조한 명령에 한해서만 검증 프롬프트를 생략한다.
+    sh("xcodebuild", *common, "-configuration", "Release", "-destination", "generic/platform=macOS",
+       "-derivedDataPath", File.join(ROOT, "build/maEditor/DerivedData"), "-archivePath", archive,
+       "-skipPackagePluginValidation", "ARCHS=arm64 x86_64", "ONLY_ACTIVE_ARCH=NO",
+       "CODE_SIGN_IDENTITY=#{APP_IDENTITY}", "DEVELOPMENT_TEAM=#{TEAM}", "CODE_SIGN_STYLE=Manual",
+       "CODE_SIGN_INJECT_BASE_ENTITLEMENTS=NO", "MARKETING_VERSION=#{version}", "CURRENT_PROJECT_VERSION=#{build}", "archive")
+    end
+    app = File.join(archive, "Products/Applications/maEditor.app")
+    info_json, info_status = Open3.capture2("plutil", "-convert", "json", "-o", "-", File.join(app, "Contents/Info.plist"))
+    UI.user_error!("maEditor 아카이브를 읽을 수 없습니다.") unless info_status.success?
+    info = JSON.parse(info_json)
+    UI.user_error!("아카이브의 버전·빌드가 배포 옵션과 다릅니다.") unless info["CFBundleShortVersionString"] == version && info["CFBundleVersion"] == build
+    sh("codesign", "--verify", "--deep", "--strict", "-R", "=anchor apple generic and certificate leaf[subject.OU] = \"#{TEAM}\" and identifier \"#{APP_ID}\"", app)
+    verify_universal(File.join(app, "Contents/MacOS/maEditor"))
+    sh("python3", File.join(ROOT, "script/audit_distribution.py"), app)
+    # 서명/고지 검사를 통과한 기존 아카이브에 유효한 티켓이 있으면 중복 제출하지 않는다.
+    _, ticket_status = Open3.capture2e("xcrun", "stapler", "validate", app)
+    notarize(package: app, api_key: api_key, print_log: true) unless ticket_status.success?
+    sh("xcrun", "stapler", "validate", app)
+    sh("spctl", "--assess", "--type", "execute", "--verbose=2", app)
+    bridge_work = File.join(work, "bridge")
+    bridge_args = ["--disable-sandbox", "--package-path", bridge_package, "--scratch-path", bridge_work,
+                   "--arch", "arm64", "--arch", "x86_64", "-c", "release"]
+    sh("swift", "build", *bridge_args, "--product", "DocumentSaferEditorBridge")
+    binary_dir, status = Open3.capture2("swift", "build", *bridge_args, "--show-bin-path")
+    UI.user_error!("연결 도구 출력 경로 조회 실패") unless status.success?
+    payload = File.join(work, "payload")
+    FileUtils.rm_rf(payload)
+    FileUtils.mkdir_p([File.join(payload, "Applications"), File.join(payload, "Library/PrivilegedHelperTools")])
+    sh("ditto", app, File.join(payload, "Applications/maEditor.app"))
+    bridge = File.join(payload, "Library/PrivilegedHelperTools", BRIDGE_ID)
+    FileUtils.cp(File.join(binary_dir.strip, "DocumentSaferEditorBridge"), bridge)
+    FileUtils.chmod(0755, bridge)
+    sh("codesign", "--force", "--options", "runtime", "--timestamp", "--identifier", BRIDGE_ID,
+       "--entitlements", File.join(bridge_package, "Scripts/EditorBridge.entitlements"), "--sign", APP_IDENTITY, bridge)
+    sh("codesign", "--verify", "--strict", "-R", "=anchor apple generic and certificate leaf[subject.OU] = \"#{TEAM}\" and identifier \"#{BRIDGE_ID}\"", bridge)
+    verify_universal(bridge)
+    component = File.join(work, "maEditor-component.pkg")
+    sh("pkgbuild", "--root", payload, "--identifier", APP_ID, "--version", build,
+       "--install-location", "/", "--ownership", "recommended", "--component-plist", File.join(ROOT, "packaging/Components.plist"),
+       "--scripts", File.join(ROOT, "packaging/scripts"), component)
+    package = File.join(dist, "maEditor-#{version}-#{build}-universal.pkg")
+    sh("productbuild", "--distribution", File.join(ROOT, "packaging/Distribution.xml"), "--package-path", work,
+       "--resources", File.join(ROOT, "packaging/resources"), "--sign", INSTALLER_IDENTITY, "--timestamp", package)
+    notarize(package: package, api_key: api_key, print_log: true)
+    sh("pkgutil", "--check-signature", package)
+    sh("xcrun", "stapler", "validate", package)
+    sh("spctl", "--assess", "--type", "install", "--verbose=2", package)
+    # 배포 PKG를 실제로 확장해 서명·고지·설치 위치와 평문/키 유입 여부를 검증한다.
+    sh("python3", File.join(ROOT, "script/verify_package.py"), package)
+    sh("ditto", app, File.join(dist, "maEditor.app"))
+    sh("ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", File.join(archive, "dSYMs"), File.join(dist, "maEditor.dSYM.zip"))
+    commit = Open3.capture2("git", "-C", ROOT, "rev-parse", "HEAD").first.strip
+    manager_commit = Open3.capture2("git", "-C", source, "rev-parse", "HEAD").first.strip
+    state = Open3.capture2("git", "-C", ROOT, "status", "--porcelain").first
+    manifest = { name: "maEditor", bundle_id: APP_ID, version: version, build: build, architectures: %w[arm64 x86_64],
+                 minimum_macos: "26.0", package: File.basename(package), sha256: Digest::SHA256.file(package).hexdigest,
+                 workspace_commit: commit, workspace_dirty: !state.empty?, provided_archive: !!options[:archive], documentsafer_commit: manager_commit,
+                 bridge_sha256: Digest::SHA256.file(bridge).hexdigest,
+                 package_lock_sha256: Digest::SHA256.file(File.join(project, "project.xcworkspace/xcshareddata/swiftpm/Package.resolved")).hexdigest,
+                 notarized: true, editor_protocol: 6, required_manager_editor_id: APP_ID }
+    File.write(File.join(dist, "release.json"), JSON.pretty_generate(manifest) + "\n")
+    UI.success("maEditor 서명·공증·검증 완료. #{package}")
+    package
+  end
+end

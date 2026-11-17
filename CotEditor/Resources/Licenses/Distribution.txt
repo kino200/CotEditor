@@ -1,0 +1,31 @@
+maEditor 1.0.0 - distribution notices
+
+Copyright of original CotEditor sources:
+© 2005-2009 nakamuxu
+© 2011, 2014 usami-k
+© 2013-2026 1024jp
+Original project: https://github.com/coteditor/CotEditor
+Source license: Apache License 2.0 (CotEditor-Apache.txt).
+
+Modified by MarkAny in November 2026 for memory-only protected TXT editing,
+DocumentSafer authentication/encrypted saving, independent maEditor identity,
+original replacement artwork, and signed/notarized installer packaging.
+CotEditor is acknowledged as the source project, not the publisher or endorser
+of this modified distribution. No upstream noncommercial image is bundled.
+Replacement artwork is licensed under Apache-2.0; see the source ATTRIBUTION.md.
+The source repository retains upstream test images; it is not a commercial
+source distribution artifact and is not included in this installer.
+
+ThirdParty.txt preserves the full original notices from pinned dependencies,
+including nested Unicode/ICU and Ed25519 notices. Dependencies.json identifies
+exact source revisions and notice hashes. The list conservatively includes
+build tools and optional packages as well as runtime inputs.
+No dependency source was modified for this release.
+
+This installer contains maEditor and the MarkAny DocumentSafer editor bridge.
+It does not contain policy servers, credentials, document keys, sample policy,
+DocumentSafer manager, or the vendor DRM dylib. Protected TXT operation requires
+a compatible signed DocumentSafer manager configured for this editor ID:
+com.markany.securedocs.textedit, editor protocol 6.
+A manager built for the former com.markany.DocumentSaferText identity must be
+updated together with the bridge; authentication is never weakened as fallback.

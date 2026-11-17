@@ -120,7 +120,7 @@ import ValueRange
     /// 보호 상태·저장 상태와 본문 없는 창 제목을 갱신한다.
     private func refreshStatus(saved: Bool = false) {
         let name = fileURL?.lastPathComponent ?? "새 문서.txt"
-        window?.title = name + " — DocumentSafer Text"
+        window?.title = name + " — maEditor"
         let protection = session.isProtected ? "보호 문서 · 암호화 저장" : "일반 문서 · 자동암호화 꺼짐"
         status.stringValue = protection + (saved ? " · 저장 완료" : "")
     }

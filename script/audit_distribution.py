@@ -6,6 +6,9 @@ import plistlib
 import subprocess
 import sys
 
+if not __debug__:
+    raise RuntimeError('Distribution audits require Python assertions; do not use -O/PYTHONOPTIMIZE')
+
 root = Path(__file__).resolve().parents[1]
 manifest = json.loads((root / 'docs/replaced-image-resources.json').read_text())
 forbidden = {item['sha256'] for item in manifest['upstream_images']}
@@ -17,13 +20,16 @@ assert not (root / 'screenshot@2x.png').exists()
 if len(sys.argv) > 1:
     app = Path(sys.argv[1])
     info = plistlib.loads((app / 'Contents/Info.plist').read_bytes())
-    assert info['CFBundleIdentifier'] == 'com.markany.DocumentSaferText'
+    assert info['CFBundleIdentifier'] == 'com.markany.securedocs.textedit'
+    assert info['CFBundleName'] == 'maEditor'
+    assert info['CFBundleExecutable'] == 'maEditor'
+    assert not info.get('SUFeedURL')
     assert info['DocumentSaferEditorProtocol'] == 6
     assert info['NSPrincipalClass'] == 'DocumentSaferTextApplication'
     for localized in app.glob('Contents/Resources/*.lproj/InfoPlist.strings'):
         content = subprocess.check_output(['/usr/bin/plutil', '-convert', 'xml1', '-o', '-', str(localized)])
         strings = plistlib.loads(content)
-        if 'CFBundleName' in strings: assert strings['CFBundleName'] == 'DocumentSafer Text'
+        if 'CFBundleName' in strings: assert strings['CFBundleName'] == 'maEditor'
     assert info.get('NSAppleScriptEnabled') is False
     assert not any(key in info for key in ['NSMainStoryboardFile', 'NSServices', 'OSAScriptingDefinition', 'NSUbiquitousContainers'])
     for item in info['CFBundleDocumentTypes']:
@@ -37,6 +43,7 @@ if len(sys.argv) > 1:
                 'com.apple.security.cs.allow-dyld-environment-variables', 'com.apple.security.cs.allow-jit',
                 'com.apple.security.cs.allow-unsigned-executable-memory', 'com.apple.security.cs.disable-executable-page-protection']:
         assert not ent.get(key), f'Unsafe entitlement: {key}'
-    for notice in ['CotEditor-Apache.txt', 'DocumentSaferText.txt', 'ThirdParty.txt']:
-        assert (app / 'Contents/Resources/Licenses' / notice).is_file()
+    for notice in ['CotEditor-Apache.txt', 'DocumentSaferText.txt', 'ThirdParty.txt', 'Dependencies.json', 'Distribution.txt']:
+        bundled = app / 'Contents/Resources/Licenses' / notice
+        assert bundled.read_bytes() == (root / 'CotEditor/Resources/Licenses' / notice).read_bytes(), f'License mismatch: {notice}'
 print(f'Distribution audit passed; {len(manifest["upstream_images"])} original image records checked.')

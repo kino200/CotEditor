@@ -1,3 +1,4 @@
+// 수정: maEditor의 MarkAny Developer ID 배포 서명을 기본값으로 사용한다.
 //
 //  CodeSigning.xcconfig
 //
@@ -27,9 +28,11 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // Use default code signing for application release.
-CODE_SIGN_IDENTITY = Apple Development
-CODE_SIGN_STYLE = Automatic
-DEVELOPMENT_TEAM = HT3Z3A72WZ
+CODE_SIGN_IDENTITY = Developer ID Application: MarkAny Inc. (9N6VX5RKP7)
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM = 9N6VX5RKP7
 
 // Uncomment the following line to override these settings for ad-hoc local development.
 //#include "CodeSigning-AdHoc.xcconfig"
+
+CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO

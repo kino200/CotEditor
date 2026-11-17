@@ -1,3 +1,9 @@
+maEditor distribution note (2026-11-17).
+The upstream image terms below remain applicable to upstream test fixtures only.
+Those images are not included in the maEditor binary distribution. Replacement
+artwork is original and licensed under Apache-2.0; see ATTRIBUTION.md.
+The original source and dependency notices are retained.
+
 The image resources are licensed under the terms of the Creative Commons
 Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a
 copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/

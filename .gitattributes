@@ -1,1 +1,4 @@
 *.swift whitespace=-blank-at-eol
+
+# 원본 라이선스의 공백까지 보존하는 제3자 고지는 공백 교정을 적용하지 않는다.
+CotEditor/Resources/Licenses/ThirdParty.txt -whitespace

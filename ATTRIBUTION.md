@@ -1,4 +1,4 @@
-# DocumentSafer Text 리소스·라이선스
+# maEditor 리소스·라이선스
 
 - CotEditor 원본 소스의 저작권·Apache License 2.0 고지는 유지한다. 수정 파일에는 변경 사실을 표시하며 상세 변경은 HISTORY.md에 기록한다.
 - 원본 이미지의 CC BY-NC-ND 4.0 허가는 상용 수정 배포의 근거로 사용하지 않는다. 배포 이미지의 교체 전 경로·SHA256은 docs/replaced-image-resources.json에 기록한다.
