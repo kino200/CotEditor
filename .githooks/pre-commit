@@ -1,0 +1,6 @@
+#!/bin/sh
+# Git에 포함될 민감 파일을 검사하고 발견하면 작업을 중단한다.
+set -eu
+root=$(git rev-parse --show-toplevel)
+cd "$root"
+exec python3 "script/check_git_sensitive.py" --index

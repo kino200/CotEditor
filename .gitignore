@@ -15,3 +15,46 @@ Packages/*/Package.resolved
 
 # Local signed bundles and installation backups
 dist/
+
+# Signing credentials and fastlane local outputs
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+.bundle/
+fastlane/report.xml
+fastlane/README.md
+
+# Python verification cache
+__pycache__/
+
+# Git 민감 파일 업로드 방지 · 2026-11-17
+# Signing secrets, local authentication, production policy responses, and generated artifacts.
+!.env.sample
+!.env.template
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+*.keychain
+*.keychain-db
+credentials.json
+secrets.json
+socket_policy_response*.json
+daemon_policy_response*.json
+*.log
+*.xcresult/
+*.xcarchive/
+*.app/
+*.dSYM/
+*.dSYM.zip
+*.pkg
+*.dmg
+*.ipa
+
+# Raw update/SSH private keys
+update-key.txt
+id_rsa
+id_ed25519
